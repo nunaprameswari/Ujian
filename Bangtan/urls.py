@@ -20,6 +20,6 @@ from .views import music
 
 urlpatterns = [
     path('', music, name='index'),
-    path('', include('Army.urls')),
+    path('', include('army.urls')),
     path('admin/', admin.site.urls),
 ]
