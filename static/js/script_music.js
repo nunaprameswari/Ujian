@@ -268,8 +268,14 @@ music.addEventListener('timeupdate', () => {
     }
     currentStart.innerHTML = `${min2}:${sec2}`;
 
+    let progressBar = parseInt((music_curr / music_dur) * 100);
+    seek.value = progressBar;
+    
+    let seekbar = seek.value;
+    bar2.style.width = `${seekbar}%`;
+    dot.style.left = `${seekbar}%`;
 
-})
+});
 
 
 let pop_song_left = document.getElementById('pop_song_left');
