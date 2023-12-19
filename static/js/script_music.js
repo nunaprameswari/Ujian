@@ -303,7 +303,12 @@ vol.addEventListener('change', () => {
         vol_icon.classList.remove('bxs-volume-low');
         vol_icon.classList.remove('bxs-volume');
     }
-})
+
+    let vol_a = vol.value;
+    vol_bar.style.width = `${vol_a}%`;
+    vol_dot.style.left = `${vol_a}%`;
+    music.volume = vol_a / 100;
+});
 
 
 let pop_song_left = document.getElementById('pop_song_left');
