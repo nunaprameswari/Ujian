@@ -243,6 +243,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
 
 let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');
+let seek = document.getElementById('seek');
+let bar2 = document.getElementById('bar2');
+let dot = document.getElementById('dot');
 
 music.addEventListener('timeupdate', () => {
     let music_curr = music.currentTime;
@@ -264,6 +267,8 @@ music.addEventListener('timeupdate', () => {
         sec2 = `0${sec2}`;
     }
     currentStart.innerHTML = `${min2}:${sec2}`;
+
+
 })
 
 
