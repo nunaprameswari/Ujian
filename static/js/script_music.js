@@ -277,6 +277,10 @@ music.addEventListener('timeupdate', () => {
 
 });
 
+seek.addEventListener('change', () => {
+    music.currentTime = seek.value * music.duration / 100;
+})
+
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');
