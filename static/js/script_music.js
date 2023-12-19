@@ -287,6 +287,24 @@ let vol = document.getElementById('vol');
 let vol_bar = document.getElementsByClassName('vol_bar');
 let vol_dot = document.getElementById('vol_dot');
 
+vol.addEventListener('change', () => {
+    if (vol.value == 0) {
+        vol_icon.classList.remove('bxs-volume-full');
+        vol_icon.classList.remove('bxs-volume-low');
+        vol_icon.classList.add('bxs-volume');
+    }
+    if (vol.value > 0) {
+        vol_icon.classList.remove('bxs-volume-full');
+        vol_icon.classList.add('bxs-volume-low');
+        vol_icon.classList.remove('bxs-volume');
+    }
+    if (vol.value) {
+        vol_icon.classList.add('bxs-volume-full');
+        vol_icon.classList.remove('bxs-volume-low');
+        vol_icon.classList.remove('bxs-volume');
+    }
+})
+
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');
