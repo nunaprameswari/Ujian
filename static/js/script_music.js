@@ -236,6 +236,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         makeAllplays();
         el.target.classList.remove('bx-play-circle');
         el.target.classList.add('bx-pause-circle');
+        wave.classList.add('active1');
 
     });
 });
