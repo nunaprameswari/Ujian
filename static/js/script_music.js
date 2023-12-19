@@ -195,6 +195,13 @@ masterPlay.addEventListener('click', () => {
 });
 
 
+const makeAllplays = () => {
+    Array.from(document.getElementsByClassName('playListPlay')).forEach((el) => {
+        el.classList.add('bx-play-circle');
+        el.classList.remove('bx-pause-circle');
+    })
+}
+
 const makeAllBackground = () => {
     Array.from(document.getElementsByClassName('songItem')).forEach((el) => {
         el.style.background = 'rgb(64, 0, 88, .0)';
@@ -226,6 +233,9 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
 
         makeAllBackground();
         Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background ="rgb(64, 0, 88, .7)";
+        makeAllplays();
+        el.target.classList.remove('bx-play-circle');
+        el.target.classList.add('bx-pause-circle');
 
     });
 });
