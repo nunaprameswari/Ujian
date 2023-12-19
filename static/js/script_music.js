@@ -237,9 +237,21 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         el.target.classList.remove('bx-play-circle');
         el.target.classList.add('bx-pause-circle');
         wave.classList.add('active1');
-
     });
 });
+
+
+let currentStart = document.getElementById('currentStart');
+let currentEnd = document.getElementById('currentEnd');
+
+music.addEventListener('timeupdate', () => {
+    let music_curr = music.currentTime;
+    let music_dur = music.duration;
+
+
+    let min1 = Math.floor(music_dur / 60);
+    let sec1 = Math.floor(music_dur % 60);
+})
 
 
 let pop_song_left = document.getElementById('pop_song_left');
