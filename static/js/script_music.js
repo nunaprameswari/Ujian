@@ -344,8 +344,8 @@ back.addEventListener('click', () => {
 
 next.addEventListener('click', () => {
     index ++;
-    if (index < 1) {
-        index = Array.from(document.getElementsByClassName('songItem')).length;
+    if (index > Array.from(document.getElementsByClassName('songItem')).length) {
+        index = 1;
     }
 
     music.src = `./static/songs/${index}.mp3`;
