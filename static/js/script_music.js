@@ -284,7 +284,7 @@ seek.addEventListener('change', () => {
 
 let vol_icon = document.getElementById('vol_icon');
 let vol = document.getElementById('vol');
-let vol_bar = document.getElementsByClassName('vol_bar');
+let vol_bar = document.getElementsByClassName('vol_bar')[0];
 let vol_dot = document.getElementById('vol_dot');
 
 vol.addEventListener('change', () => {
@@ -298,12 +298,11 @@ vol.addEventListener('change', () => {
         vol_icon.classList.add('bxs-volume-low');
         vol_icon.classList.remove('bxs-volume');
     }
-    if (vol.value) {
+    if (vol.value > 50) {
         vol_icon.classList.add('bxs-volume-full');
         vol_icon.classList.remove('bxs-volume-low');
         vol_icon.classList.remove('bxs-volume');
     }
-
     let vol_a = vol.value;
     vol_bar.style.width = `${vol_a}%`;
     vol_dot.style.left = `${vol_a}%`;
