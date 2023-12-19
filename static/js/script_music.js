@@ -245,7 +245,7 @@ let currentStart = document.getElementById('currentStart');
 let currentEnd = document.getElementById('currentEnd');
 let seek = document.getElementById('seek');
 let bar2 = document.getElementById('bar2');
-let dot = document.getElementById('dot');
+let dot = document.getElementsByClassName('dot')[0];
 
 music.addEventListener('timeupdate', () => {
     let music_curr = music.currentTime;
