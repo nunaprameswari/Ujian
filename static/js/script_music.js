@@ -256,6 +256,14 @@ music.addEventListener('timeupdate', () => {
         sec1 = `0${sec1}`;
     } 
     currentEnd.innerText = `${min1}:${sec1}`;
+
+    let min2 = Math.floor(music_curr / 60);
+    let sec2 = Math.floor(music_curr % 60);
+
+    if (sec2 < 10) {
+        sec2 = `0${sec2}`;
+    }
+    currentStart.innerHTML = `${min2}:${sec2}`;
 })
 
 
