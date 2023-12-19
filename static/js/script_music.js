@@ -310,6 +310,10 @@ vol.addEventListener('change', () => {
 });
 
 
+let back = document.getElementById('back');
+let next = document.getElementById('next');
+
+
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');
 let pop_song = document.getElementsByClassName('pop_song')[0];
