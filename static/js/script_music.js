@@ -313,6 +313,35 @@ vol.addEventListener('change', () => {
 let back = document.getElementById('back');
 let next = document.getElementById('next');
 
+back.addEventListener('click', () => {
+    index -= 1;
+    if (index < 1) {
+        index = Array.from(document.getElementsByClassName('songItem')).length;
+    }
+
+    music.src = `./static/songs/${index}.mp3`;
+        music.play();
+        masterPlay.classList.remove('bx-play');
+        masterPlay.classList.add('bx-pause');
+
+        let songTitles = songs.filter((els) => {
+            return els.id == index;
+        });
+
+        songTitles.forEach(elss => {
+            let { songName, poster } = elss;
+            title.innerHTML = songName;
+            poster_master_play.src = poster;
+        });
+
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background ="rgb(64, 0, 88, .7)";
+        makeAllplays();
+        el.target.classList.remove('bx-play-circle');
+        el.target.classList.add('bx-pause-circle');
+        wave.classList.add('active1');
+})
+
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');
