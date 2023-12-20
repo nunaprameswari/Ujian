@@ -211,6 +211,7 @@ const makeAllBackground = () => {
 
 let index = 0;
 let poster_master_play = document.getElementById('poster_master_play');
+let download_music = document.getElementById('download_music');
 let title = document.getElementById('title');
 
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
