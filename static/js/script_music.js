@@ -221,6 +221,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
+        download_music.href = `./static/songs/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -230,6 +231,7 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
             let { songName, poster } = elss;
             title.innerHTML = songName;
             poster_master_play.src = poster;
+            download_music.setAttribute('download', songName);
         });
 
         makeAllBackground();
