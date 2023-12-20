@@ -3,32 +3,32 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Anpanman <br>
-        <div class="album">Love Yourself 轉 Tear (2018)</div>`,
+        songName: `Epiphany <br>
+        <div class="album">Love Yourself 结 Answer (2018)</div>`,
         poster: "./static/img/seokjin/ephiphany.jpg",
     },
     {
         id: '2',
-        songName: `뱁새 (Baepsae) <br>
-        <div class="album">In The Mood For Love pt.2 (2016)</div>`,
+        songName: `Super Tuna <br>
+        <div class="album">슈퍼 참치 (2021)</div>`,
         poster: "./static/img/seokjin/super_tuna.jpg",
     },
     {
         id: '3',
-        songName: `Black Swan <br>
-        <div class="album">Map Of The Soul 7 (2020)</div>`,
+        songName: `The Astronaut <br>
+        <div class="album">The Astronaut (2022)</div>`,
         poster: "./static/img/seokjin/the_astronaut.jpg",
     },
     {
         id: '4',
-        songName: `Idol
-        <div class="album">Love Yourself 结 Answer (2018)</div>`,
+        songName: `Moon <br>
+        <div class="album">Map Of The Soul 7 (2020)</div>`,
         poster: "./static/img/seokjin/moon.jpg",
     },
     {
         id: '5',
-        songName: `Ddaeng <br>
-        <div class="album">DD Ceremony</div>`,
+        songName: `Tonight <br>
+        <div class="album">JIN</div>`,
         poster: "./static/img/seokjin/tonight.jpg",
     },
     {
