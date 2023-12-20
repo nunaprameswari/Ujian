@@ -287,6 +287,8 @@ header .master_play .icon .shuffle {
 }
 
 header .master_play .icon #download_music {
+    text-decoration: none;
+    color: #8131a7;
     font-size: 20px;
     margin-left: 5px;
 }
