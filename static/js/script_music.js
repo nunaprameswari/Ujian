@@ -385,3 +385,33 @@ pop_song_right.addEventListener('click', () => {
 pop_song_left.addEventListener('click', () => {
     pop_song.scrollLeft -= 330;
 });
+
+
+let shuffle = document.getElementsByClassName('shuffle')[0];
+
+shuffle.addEventListener('click', () => {
+    let a = shuffle.innerHTML;
+
+    switch (a) {
+        case "next":
+            shuffle.classList.add('bx-repeat');
+            shuffle.classList.remove('bx-music');
+            shuffle.classList.remove('bx-shuffle');
+            shuffle.innerHTML = 'repeat';
+            break;
+    
+        case "repeat":
+            shuffle.classList.remove('bx-repeat');
+            shuffle.classList.remove('bx-music');
+            shuffle.classList.add('bx-shuffle');
+            shuffle.innerHTML = 'random';
+            break;
+
+        case "random":
+            shuffle.classList.remove('bx-repeat');
+            shuffle.classList.add('bx-music');
+            shuffle.classList.remove('bx-shuffle');
+            shuffle.innerHTML = 'next';
+            break;
+    }
+});
