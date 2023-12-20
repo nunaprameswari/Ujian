@@ -505,3 +505,19 @@ const random_music = () => {
     el.target.classList.add('bx-pause-circle');
     wave.classList.add('active1');
 }
+
+music.addEventListener('ended', () => {
+    let b = shuffle.innerHTML;
+
+    switch (b) {
+        case "repeat":
+            repeat_music();
+            break;
+        case "next":
+            next_music();
+            break;
+        case "random":
+            random_music();
+            break;
+    }
+})
