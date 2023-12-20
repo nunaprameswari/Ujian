@@ -415,3 +415,30 @@ shuffle.addEventListener('click', () => {
             break;
     }
 });
+
+music.addEventListener('ended', () => {
+        index ++;
+        music.src = `./static/songs/${index}.mp3`;
+        music.play();
+        masterPlay.classList.remove('bx-play');
+        masterPlay.classList.add('bx-pause');
+        download_music.href = `./static/songs/${index}.mp3`;
+
+        let songTitles = songs.filter((els) => {
+            return els.id == index;
+        });
+
+        songTitles.forEach(elss => {
+            let { songName, poster } = elss;
+            title.innerHTML = songName;
+            poster_master_play.src = poster;
+            download_music.setAttribute('download', songName);
+        });
+
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background ="rgb(64, 0, 88, .7)";
+        makeAllplays();
+        el.target.classList.remove('bx-play-circle');
+        el.target.classList.add('bx-pause-circle');
+        wave.classList.add('active1');
+})
