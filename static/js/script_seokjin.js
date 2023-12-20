@@ -11,19 +11,19 @@ const songs = [
         id: '2',
         songName: `뱁새 (Baepsae) <br>
         <div class="album">In The Mood For Love pt.2 (2016)</div>`,
-        poster: "./static/img/seokjin/moon.jpg",
+        poster: "./static/img/seokjin/super_tuna.jpg",
     },
     {
         id: '3',
         songName: `Black Swan <br>
         <div class="album">Map Of The Soul 7 (2020)</div>`,
-        poster: "./static/img/seokjin/super_tuna.jpg",
+        poster: "./static/img/seokjin/the_astronaut.jpg",
     },
     {
         id: '4',
         songName: `Idol
         <div class="album">Love Yourself 结 Answer (2018)</div>`,
-        poster: "./static/img/seokjin/the_astronaut.jpg",
+        poster: "./static/img/seokjin/moon.jpg",
     },
     {
         id: '5',
