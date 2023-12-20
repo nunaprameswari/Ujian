@@ -5,31 +5,31 @@ const songs = [
         id: '1',
         songName: `Anpanman <br>
         <div class="album">Love Yourself 轉 Tear (2018)</div>`,
-        poster: "./static/img/anpanman1.jpg",
+        poster: "./static/img/seokjin/ephiphany.jpg",
     },
     {
         id: '2',
         songName: `뱁새 (Baepsae) <br>
         <div class="album">In The Mood For Love pt.2 (2016)</div>`,
-        poster: "./static/img/baepsae1.jpg",
+        poster: "./static/img/seokjin/moon.jpg",
     },
     {
         id: '3',
         songName: `Black Swan <br>
         <div class="album">Map Of The Soul 7 (2020)</div>`,
-        poster: "./static/img/black_swan1.jpg",
+        poster: "./static/img/seokjin/super_tuna.jpg",
     },
     {
         id: '4',
         songName: `Idol
         <div class="album">Love Yourself 结 Answer (2018)</div>`,
-        poster: "./static/img/Idol1.jpg",
+        poster: "./static/img/seokjin/the_astronaut.jpg",
     },
     {
         id: '5',
         songName: `Ddaeng <br>
         <div class="album">DD Ceremony</div>`,
-        poster: "./static/img/ddaeng1.jpg",
+        poster: "./static/img/seokjin/tonight.jpg",
     },
     {
         id: '6',
