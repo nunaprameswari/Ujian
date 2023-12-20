@@ -514,6 +514,7 @@ header .song_side nav .search .search_result .card {
     align-items: center;
     background: rgb(64, 0, 88, .7);
     margin-bottom: 5px;
+}
 
 header .song_side nav .search .bx {
     font-size: 20px;
