@@ -508,7 +508,11 @@ header .song_side nav .search .search_result {
 }
 
 header .song_side nav .search .search_result::-webkit-scrollbar {
-    display: none;
+    width: 2px;
+}
+
+header .song_side nav .search .search_result::-webkit-scrollbar-thumb {
+    background: #611c81;
 }
 
 header .song_side nav .search .search_result .card {
