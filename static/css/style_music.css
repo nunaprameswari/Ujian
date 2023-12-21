@@ -528,6 +528,7 @@ header .song_side nav .search .search_result .card .content {
     height: 100%;
     /*border: 1px solid #fff;*/
     padding: 0;
+    margin: 0px 0px 0px 30px;
     font-size: 13px;
     font-weight: 600;
     color: #fff;
