@@ -177,7 +177,22 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
 });
 
 // search data start
-let search_result = document.getElementById('search_result');
+let search_result = document.getElementsByClassName('search_result')[0];
+
+songs.forEach(element => {
+    const {id, songName, poster} = element;
+    
+    let card = document.createElement('a');
+    card.classList.add('card');
+
+    card.innerHTML = `
+    <img src="${poster}" alt="">
+                            <div class="content">
+                                ${songName}
+                            </div>
+    `;
+    search_result.appendChild(card);
+});
 // search data end
 
 
