@@ -504,6 +504,7 @@ header .song_side nav .search .search_result {
     z-index: 99999999;
     margin-top: 10px;
     border-radius: 10px;
+    overflow: auto;
 }
 
 header .song_side nav .search .search_result .card {
