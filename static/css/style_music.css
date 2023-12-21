@@ -509,7 +509,7 @@ header .song_side nav .search .search_result {
 header .song_side nav .search .search_result .card {
     width: 100%;
     min-height: 45px;
-    border: 1px solid #fff;
+    /*border: 1px solid #fff;*/
     display: flex;
     align-items: center;
     background: rgb(64, 0, 88, .7);
