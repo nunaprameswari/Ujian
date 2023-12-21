@@ -176,6 +176,10 @@ Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
     e.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 });
 
+// search data start
+let search_result = document.getElementById('search_result');
+// search data end
+
 
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementById('wave');
