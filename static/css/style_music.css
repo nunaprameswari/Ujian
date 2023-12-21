@@ -533,6 +533,12 @@ header .song_side nav .search .search_result .card .content {
     color: #fff;
 }
 
+header .song_side nav .search .search_result .card .content .album {
+    font-size: 11px;
+    color: #a4a8b4;
+    font-weight: 500;
+}
+
 header .song_side nav .search .bx {
     font-size: 20px;
     padding: 7px 0px 0px 10px;
