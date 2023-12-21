@@ -507,6 +507,10 @@ header .song_side nav .search .search_result {
     overflow: auto;
 }
 
+header .song_side nav .search .search_result::-webkit-scrollbar {
+    display: none;
+}
+
 header .song_side nav .search .search_result .card {
     width: 100%;
     min-height: 45px;
