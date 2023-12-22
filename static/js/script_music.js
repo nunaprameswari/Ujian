@@ -210,6 +210,12 @@ input.addEventListener('keyup', () => {
         } else {
             items[index].style.display = "none";
         }
+
+        if (input.value == 0) {
+            search_result.style.display = "none";
+        } else {
+            search_result.style.display = "";
+        }
     }
 })
 // search data end
