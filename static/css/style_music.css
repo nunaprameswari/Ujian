@@ -773,6 +773,10 @@ header .song_side .artist .item li img {
         transition: 1s linear;
     }
 
+    header .menu_side_active {
+        transform: translateX(-100%);
+    }
+
     header .song_side {
         width: 100%;
     }
