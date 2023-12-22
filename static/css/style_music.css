@@ -429,7 +429,7 @@ header .song_side::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 270px;
+    height: 285px;
     background: url('../img/a.png');
     z-index: -1;
 }
@@ -749,6 +749,7 @@ header .song_side .artist .item li img {
 @media screen and (max-width: 1200px) {
     header {
         width: 100%;
+        transition: .5s linear;
     }
 
     header .menu_side, .song_side {
@@ -761,5 +762,23 @@ header .song_side .artist .item li img {
 
     header .song_side .content {
         height: 18%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    header .menu_side {
+        z-index: 999;
+        width: 40%;
+        position: absolute;
+        transition: 1s linear;
+    }
+
+    header .song_side {
+        width: 100%;
+    }
+
+    header .master_play {
+        position: absolute;
+        bottom: 0;
     }
 }
