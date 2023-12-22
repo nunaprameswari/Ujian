@@ -716,6 +716,16 @@ header .song_side .artist .h4 {
     justify-content: space-between;
 }
 
+header .song_side .artist .h4 .bx {
+    color: #d47ef7;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .artist .h4 .bx:hover{
+    color: #441457;
+}
+
 header .song_side .artist .item {
     width: 100%;
     height: auto;
