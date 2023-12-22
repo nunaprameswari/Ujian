@@ -429,7 +429,7 @@ header .song_side::before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 285px;
+    height: 270px;
     background: url('../img/a.png');
     z-index: -1;
 }
@@ -580,7 +580,7 @@ header .song_side nav .user img {
     box-sizing: 2px 2px 8px #8131a7;
 }
 
-header .song_side .motivation {
+header .song_side .content {
     width: 90%;
     height: 30%;
     /*border: 1px solid #fff;*/
@@ -588,17 +588,17 @@ header .song_side .motivation {
     padding-top: 20px;
 }
 
-header .song_side .motivation h1 {
+header .song_side .content h1 {
     font-size: 25px;
     font-weight: 600;
 }
 
-header .song_side .motivation h1 img {
+header .song_side .content h1 img {
     width: 30px;
     height: 30px;
 }
 
-header .song_side .motivation p {
+header .song_side .content p {
     font-size: 15px;
     font-weight: 400;
     color: #4c5262;
@@ -744,4 +744,22 @@ header .song_side .artist .item li img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+    }
+
+    header .menu_side, .song_side {
+        width: 30%;
+    }
+
+    header .song_side {
+        width: 70%;
+    }
+
+    header .song_side .content {
+        height: 18%;
+    }
 }
