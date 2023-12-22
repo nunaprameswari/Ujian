@@ -819,4 +819,14 @@ header .song_side .artist .item li img {
     header .menu_side {
         width: 60%;
     }
+
+    header .master_play {
+        z-index: 999999999999999999999999;
+    }
+
+    header .master_play .icon {
+        position: absolute;
+        top: -46px;
+        right: 30%;
+    }
 }
