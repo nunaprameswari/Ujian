@@ -430,6 +430,13 @@ pop_song_left.addEventListener('click', () => {
     pop_song.scrollLeft -= 330;
 });
 
+pop_art_right.addEventListener('click', () => {
+    item.scrollLeft += 330;
+});
+pop_art_left.addEventListener('click', () => {
+    item.scrollLeft -= 330;
+});
+
 
 let shuffle = document.getElementsByClassName('shuffle')[0];
 
