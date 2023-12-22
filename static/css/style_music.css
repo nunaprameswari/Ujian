@@ -524,6 +524,7 @@ header .song_side nav .search .search_result .card {
     background: rgb(64, 0, 88, .7);
     margin-bottom: 5px;
     text-decoration: none;
+    display: none;
 }
 
 header .song_side nav .search .search_result .card img {
