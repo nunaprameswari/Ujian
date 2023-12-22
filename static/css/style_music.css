@@ -771,10 +771,10 @@ header .song_side .artist .item li img {
         width: 40%;
         position: absolute;
         transition: 1s linear;
-    }
-
-    header .menu_side_active {
         transform: translateX(-100%);
+    }
+    
+    header .menu_side_active {
     }
 
     header .song_side {
