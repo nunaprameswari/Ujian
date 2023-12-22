@@ -541,6 +541,7 @@ header .song_side nav .search .search_result .card .content {
     font-size: 13px;
     font-weight: 600;
     color: #fff;
+    cursor: pointer;
 }
 
 header .song_side nav .search .search_result .card .content .album {

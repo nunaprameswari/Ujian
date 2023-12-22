@@ -184,7 +184,7 @@ songs.forEach(element => {
     
     let card = document.createElement('a');
     card.classList.add('card');
-
+    card.href = "#" + id;
     card.innerHTML = `
     <img src="${poster}" alt="">
                             <div class="content">
