@@ -6,4 +6,4 @@ from .models import Artist
 class ArtistAdmin(admin.ModelAdmin):
     list_display = ("judul", "isi_Tokoku",)
 
-admin.site.register(Tokoku, TokokuAdmin)
+admin.site.register(Artist, ArtistAdmin)
