@@ -794,5 +794,7 @@ header .song_side .artist .item li img {
         align-items: center;
         justify-content: center;
         font-size: 18px;
+        cursor: pointer;
+        transition: 1s linear;
     }
 }
