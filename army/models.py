@@ -11,7 +11,7 @@ class Idol(models.Model):
 class Artist(models.Model):
     Idola = models.ForeignKey(Idol, on_delete=models.CASCADE)
     Nama_Panggung = models.CharField(max_length=100)
-    Tanggal_Lahir = models.CharField(max_length=100)
+    Tanggal_Lahir = models.DateField(null=True)
     Alamat = models.CharField(max_length=100)
     Pesan_Moral = models.TextField()
     

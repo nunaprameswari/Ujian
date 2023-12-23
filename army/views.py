@@ -15,3 +15,7 @@ def seokjin(request):
 def Idol(request):
     template = loader.get_template('seokjin.html')
     return HttpResponse(template.render(context, request))
+
+def Artist(request):
+    template = loader.get_template('music.html')
+    return HttpResponse(template.render())
