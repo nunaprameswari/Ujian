@@ -13,14 +13,18 @@ def seokjin(request):
     return HttpResponse(template.render())
 
 def artist(request):
-    template = loader.get_template('seokjin.html')
-    return HttpResponse(template.render())
+    bangtan = Artist.objects.all().values() 
+    template = loader.get_template('artist.html')
+    context = {
+        'members': bangtan
+    } #tipe data set memiliki key value
+    return HttpResponse(template.render(context))
 
 def idol(request):
-    Artis = Idol.objects.all() #manggil data dari database
+    bangtan = Idol.objects.all() #manggil data dari database
     template = loader.get_template('idol.html')
     context = {
         'nama': 'Nama Member BTS',
-        'member': Artis, #mengirim data ke view/template
+        'member': bangtan, #mengirim data ke view/template
     }
     return HttpResponse(template.render(context, request))
