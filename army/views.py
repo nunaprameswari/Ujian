@@ -17,5 +17,10 @@ def Idol(request):
     return HttpResponse(template.render(context, request))
 
 def artist(request):
-    template = loader.get_template('music.html')
-    return HttpResponse(template.render())
+    artis = Idol.objects.all() #manggil data dari database
+    template = loader.get_template('artist.html')
+    context = {
+        'nama': 'Nama Member BTS',
+        'member': idol, #mengirim data ke view/template
+    }
+    return HttpResponse(template.render(context, request))
