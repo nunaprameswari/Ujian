@@ -1,0 +1,15 @@
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Idol</th>
+        <th>Nama_Panggung</th>
+    </tr>
+
+    {% for dt in members %}
+    <tr>
+        <td>{{ dt.id }}</td>
+        <td>{{ dt.Nama_Idol }}</td>
+        <td><a href="berita/{{ dt.id }}">{{ dt.Nama_Panggung }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
