@@ -16,7 +16,7 @@ def artist(request):
     bangtan = Artist.objects.all().values() 
     template = loader.get_template('artist.html')
     context = {
-        'members': bangtan
+        'member': bangtan
     } #tipe data set memiliki key value
     return HttpResponse(template.render(context))
 
