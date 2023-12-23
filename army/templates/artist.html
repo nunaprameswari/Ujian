@@ -2,14 +2,12 @@
     <tr>
         <th>ID</th>
         <th>Nama_Idol</th>
-        <th>Nama_Panggung</th>
     </tr>
 
-    {% for dt in member %}
+    {% for dt in members %}
     <tr>
         <td>{{ dt.id }}</td>
-        <td>{{ dt.Nama_Idol }}</td>
-        <td><a href="artist/{{ dt.id }}">{{ dt.Nama_Panggung }}</a></td>
+        <td><a href="artist/{{ dt.id }}">{{ dt.Nama_Idol }}</a></td>
     </tr>
     {% endfor %}
 </table>

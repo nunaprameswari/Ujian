@@ -13,10 +13,10 @@ def seokjin(request):
     return HttpResponse(template.render())
 
 def artist(request):
-    bangtan = Artist.objects.all().values() 
+    bangtan = Idol.objects.all().values() 
     template = loader.get_template('artist.html')
     context = {
-        'member': bangtan
+        'members': bangtan
     } #tipe data set memiliki key value
     return HttpResponse(template.render(context))
 
@@ -28,3 +28,12 @@ def idol(request):
         'member': bangtan, #mengirim data ke view/template
     }
     return HttpResponse(template.render(context, request))
+
+def data(request, id_url):
+    bangtan = Artist.objects.filter(id=id_url).first()
+    template = loader.get_template('data.html')
+    context = {
+        'members': bangtan
+    }
+    #raise Exception(data)
+    return HttpResponse(template.render(context))
