@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<!--<link rel="stylesheet" href="{% static 'css/myartist.css' %}">!-->
+<head>
+  <title>Home</title>
+</head>
+<body>
+<h1>{{ nama }}</h1>
+<ol>
+  {% for x in cobas %}
+  <li>{{ x.nama_Boutiq }}</li>
+  {% endfor %}
+</ol>
+</body>
+</html>
