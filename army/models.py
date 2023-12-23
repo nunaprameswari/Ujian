@@ -16,4 +16,4 @@ class Artist(models.Model):
     Pesan_Moral = models.TextField()
     
     def __str__(self):
-        return f"{self.Nama_Panggung} {self.Tanggal_Lahir} {self.Alamat} {self.Pesan_Moral}"
+        return f"{self.Idola} {self.Nama_Panggung} {self.Tanggal_Lahir} {self.Alamat} {self.Pesan_Moral}"
