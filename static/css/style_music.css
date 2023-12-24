@@ -175,6 +175,13 @@ header .menu_side .menu_song li .bx {
     right: 20px;
 }
 
+header .menu_side .menu_song #heart {
+    font-size: 20px;
+    color: #8131a7;
+    position: absolute;
+    right: 40px;
+}
+
 header .master_play {
     display: flex;
     align-items: center;
