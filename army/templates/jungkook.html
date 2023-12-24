@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style_music.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Army</title>
+    <style>
+        header .song_side::before {
+            background: url('./static/img/koki.png');
+        }
+
+        header .menu_side .playlist {
+            text-decoration: none;
+            color: #d47ef7;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <div class="menu_side">
+            <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
+            <div class="playlist">
+                <h4 class="active"><i class='bx bx-music'></i><a href="music"> Music</h4></a>
+                <h4><span></span> My favorite</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="{% static 'img/anpanman1.jpg' %}" alt="">
+                    <h5>Anpanman <br>
+                        <div class="album">Love Yourself 轉 Tear (2018)</div>
+                    </h5>
+                    <i class='bx playListPlay bx-play-circle' id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="{% static 'img/baepsae1.jpg' %}" alt="">
+                    <h5>뱁새 (Baepsae) <br>
+                        <div class="album">In The Mood For Love pt.2 (2016)</div>
+                    </h5>
+                    <i class='bx playListPlay bx-play-circle' id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="{% static 'img/black_swan1.jpg' %}" alt="">
+                    <h5>Black Swan <br>
+                        <div class="album">Map Of The Soul 7 (2020)</div>
+                    </h5>
+                    <i class='bx playListPlay bx-play-circle' id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="{% static 'img/Idol1.jpg' %}" alt="">
+                    <h5>Idol
+                        <div class="album">Love Yourself 结 Answer (2018)</div>
+                    </h5>
+                    <i class='bx playListPlay bx-play-circle' id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="{% static 'img/ddaeng1.jpg' %}" alt="">
+                    <h5>Ddaeng <br>
+                        <div class="album">DD Ceremony</div>
+                    </h5>
+                    <i class='bx playListPlay bx-play-circle' id="5"></i>
+                </li>
+            </div>
+        </div>
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>Album Music</li>
+                </ul>
+                <div class="search">
+                    <i class='bx bx-search-alt'></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="{% static 'img/nuna.jpg' %}" alt="">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Kim Seokjin</h1>
+                <p>"chase your dreams with a forever young soul, even if you fall, <br> get hurt, keep moving forward to achieve your dreams" <br> -BTS~young forever</p>
+            </div>
+
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular Song</h4>
+                    <div class="btn">
+                        <i class="bx bxs-chevron-left" id="pop_song_left"></i>
+                        <i class="bx bxs-chevron-right" id="pop_song_right"></i>
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Blood_Sweat_Tears1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="6"></i>
+                        </div>
+                        <h5>2 Blood Sweat and Tears
+                            <div class="album">WINGS (2016)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Boy_With_Luv1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="7"></i>
+                        </div>
+                        <h5>Boy With Luv (Feat. Halsey)
+                            <div class="album">Map Of The Soul : PERSONA (2020)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Butter1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="8"></i>
+                        </div>
+                        <h5>Butter
+                            <div class="album">BUTTER (2021)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/DNA1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="9"></i>
+                        </div>
+                        <h5>DNA
+                            <div class="album">Love Yourself 承 Her (2017)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/DOPE1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="10"></i>
+                        </div>
+                        <h5>쩔어 (Dope)
+                            <div class="album">In The Mood For Love pt.1 (2015)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Dynamite1.jpeg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="11"></i>
+                        </div>
+                        <h5>Dynamite
+                            <div class="album">Dynamite (2020)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/FAKE_LOVE1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="12"></i>
+                        </div>
+                        <h5>Fake Love
+                            <div class="album">Love Yourself 轉 Tear (2018)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Go_Go1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="13"></i>
+                        </div>
+                        <h5>고민보다 Go (Go Go)
+                            <div class="album">Love Yourself 承 Her (2017)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/danger1.png' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="14"></i>
+                        </div>
+                        <h5>Danger <br>
+                            <div class="album">Dark & Wild (2014)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/mic_drop1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="15"></i>
+                        </div>
+                        <h5>MIC Drop
+                            <div class="album">Love Yourself 承 Her (2017)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/ON1.jpeg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="16"></i>
+                        </div>
+                        <h5>ON
+                            <div class="album">Map Of The Soul 7 (2020)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Permission_to_Dance1.jpeg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="17"></i>
+                        </div>
+                        <h5>Permission to Dance
+                            <div class="album">BUTTER (2021)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Run1.jpg' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="18"></i>
+                        </div>
+                        <h5>RUN
+                            <div class="album">In The Mood For Love pt.2 (2016)</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="{% static 'img/Yet_To_Come1.png' %}" alt="">
+                            <i class='bx playListPlay bx-play-circle' id="19"></i>
+                        </div>
+                        <h5>Yet To Come (The Most Beatiful Moment)
+                            <div class="album">PROOF (2022)</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="artist">
+                <div class="h4">
+                    <h4>Artist</h4>
+                    <div class="btn"></div>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="{% static 'img/seokjin.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/yoongi.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/hope0.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/namu0.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/jimin1.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/taehyung.jpg' %}" alt="">
+                    </li>
+                    <li>
+                        <img src="{% static 'img/jungkook1.jpg' %}" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="{% static 'img/black_swan1.jpg' %}" alt="" id="poster_master_play">
+            <h5 id="title">
+                Black Swan
+                <div class="album">Map Of The Soul 7 (2020)</div>
+            </h5>
+            <div class="icon">
+                <i class='bx shuffle bx-music'>next</i>
+                <i class='bx bx-skip-previous' id='back'></i>
+                <i class='bx bx-play' id='masterPlay'></i>
+                <i class='bx bx-skip-next' id='next'></i>
+                <a href="" download id="download_music"><i class='bx bx-cloud-download'></i></a>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">3:18</span>
+            <div class="vol">
+                <i class='bx bxs-volume-full' id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+    <script src="{% static 'js/script_hope.js' %}"></script>
+</body>
+
+
+</html>
