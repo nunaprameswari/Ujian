@@ -32,6 +32,10 @@ def taehyung(request):
     template = loader.get_template('taehyung.html')
     return HttpResponse(template.render())
 
+def jungkook(request):
+    template = loader.get_template('jungkook.html')
+    return HttpResponse(template.render())
+
 def artist(request):
     bangtan = Idol.objects.all().values() 
     template = loader.get_template('artist.html')
