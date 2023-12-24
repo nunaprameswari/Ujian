@@ -24,6 +24,10 @@ def namu(request):
     template = loader.get_template('namu.html')
     return HttpResponse(template.render())
 
+def jimin(request):
+    template = loader.get_template('jimin.html')
+    return HttpResponse(template.render())
+
 def artist(request):
     bangtan = Idol.objects.all().values() 
     template = loader.get_template('artist.html')
