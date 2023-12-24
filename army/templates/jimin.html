@@ -13,8 +13,16 @@
             background: url('./static/img/jimin.png');
         }
 
-        header .menu_side .playlist {
+        header .menu_side .playlist a {
             text-decoration: none;
+            color: #4c5262;
+        }
+
+        header .menu_side .playlist a:hover {
+            color: #d47ef7;
+        }
+
+        header .song_side a:hover {
             color: #d47ef7;
         }
     </style>
@@ -26,7 +34,7 @@
         <div class="menu_side">
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
-                <h4 class="active"><i class='bx bx-music'></i><a href="music"> Music</h4></a>
+                <h4><span></span><a href="music"> Music</h4></a>
                 <h4><span></span> My favorite</h4>
             </div>
             <div class="menu_song">
@@ -36,6 +44,7 @@
                     <h5>Anpanman <br>
                         <div class="album">Love Yourself 轉 Tear (2018)</div>
                     </h5>
+                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="1"></i>
                 </li>
                 <li class="songItem">
@@ -44,6 +53,7 @@
                     <h5>뱁새 (Baepsae) <br>
                         <div class="album">In The Mood For Love pt.2 (2016)</div>
                     </h5>
+                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="2"></i>
                 </li>
                 <li class="songItem">
@@ -52,6 +62,7 @@
                     <h5>Black Swan <br>
                         <div class="album">Map Of The Soul 7 (2020)</div>
                     </h5>
+                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="3"></i>
                 </li>
                 <li class="songItem">
@@ -60,6 +71,7 @@
                     <h5>Idol
                         <div class="album">Love Yourself 结 Answer (2018)</div>
                     </h5>
+                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="4"></i>
                 </li>
                 <li class="songItem">
@@ -68,6 +80,7 @@
                     <h5>Ddaeng <br>
                         <div class="album">DD Ceremony</div>
                     </h5>
+                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="5"></i>
                 </li>
             </div>
@@ -76,8 +89,11 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li>Discover <span></span></li>
+                    <li><a href="music">Discover</li></a>
                     <li>Album Music</li>
+                    <li><a href="admin">Admin</a></li>
+                    <li><a href="idol">Idol</a></li>
+                    <li><a href="artist">Artist</a></li>
                 </ul>
                 <div class="search">
                     <i class='bx bx-search-alt'></i>
@@ -88,8 +104,8 @@
                 </div>
             </nav>
             <div class="content">
-                <h1>Kim Seokjin</h1>
-                <p>"chase your dreams with a forever young soul, even if you fall, <br> get hurt, keep moving forward to achieve your dreams" <br> -BTS~young forever</p>
+                <h1>Park Jimin</h1>
+                <p>"Even if you only live one day, <br> do what you want to do and choose for yourself the path you want to take" <br> ~Park Jimin</p>
             </div>
 
             <div class="popular_song">
@@ -123,6 +139,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Butter1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="8"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Butter
                             <div class="album">BUTTER (2021)</div>
@@ -132,6 +151,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/DNA1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="9"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>DNA
                             <div class="album">Love Yourself 承 Her (2017)</div>
@@ -141,6 +163,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/DOPE1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="10"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>쩔어 (Dope)
                             <div class="album">In The Mood For Love pt.1 (2015)</div>
@@ -150,6 +175,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Dynamite1.jpeg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="11"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Dynamite
                             <div class="album">Dynamite (2020)</div>
@@ -159,6 +187,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/FAKE_LOVE1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="12"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Fake Love
                             <div class="album">Love Yourself 轉 Tear (2018)</div>
@@ -168,6 +199,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Go_Go1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="13"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>고민보다 Go (Go Go)
                             <div class="album">Love Yourself 承 Her (2017)</div>
@@ -177,6 +211,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/danger1.png' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="14"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Danger <br>
                             <div class="album">Dark & Wild (2014)</div>
@@ -186,6 +223,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/mic_drop1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="15"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>MIC Drop
                             <div class="album">Love Yourself 承 Her (2017)</div>
@@ -195,6 +235,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/ON1.jpeg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="16"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>ON
                             <div class="album">Map Of The Soul 7 (2020)</div>
@@ -204,6 +247,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Permission_to_Dance1.jpeg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="17"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Permission to Dance
                             <div class="album">BUTTER (2021)</div>
@@ -213,6 +259,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Run1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="18"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>RUN
                             <div class="album">In The Mood For Love pt.2 (2016)</div>
@@ -222,6 +271,9 @@
                         <div class="img_play">
                             <img src="{% static 'img/Yet_To_Come1.png' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="19"></i>
+                            <div class="cinta">
+                                <i class='bx favorite bx-heart-circle' id="heart"></i>
+                            </div>
                         </div>
                         <h5>Yet To Come (The Most Beatiful Moment)
                             <div class="album">PROOF (2022)</div>
@@ -232,29 +284,32 @@
             <div class="artist">
                 <div class="h4">
                     <h4>Artist</h4>
-                    <div class="btn"></div>
+                    <div class="btn">
+                        <i class="bx bxs-chevron-left" id="pop_art_left"></i>
+                        <i class="bx bxs-chevron-right" id="pop_art_right"></i>
+                    </div>
                 </div>
                 <div class="item">
                     <li>
-                        <img src="{% static 'img/seokjin.jpg' %}" alt="">
+                        <a href="seokjin"><img src="{% static 'img/seokjin.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/yoongi.jpg' %}" alt="">
+                        <a href="yoongi"><img src="{% static 'img/yoongi.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/hope0.jpg' %}" alt="">
+                        <a href="hope"><img src="{% static 'img/hope1.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/namu0.jpg' %}" alt="">
+                        <a href="namu"><img src="{% static 'img/namu0.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/jimin1.jpg' %}" alt="">
+                        <a href="jimin"><img src="{% static 'img/jimin1.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/taehyung.jpg' %}" alt="">
+                        <a href="taehyung"><img src="{% static 'img/taehyung.jpeg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/jungkook1.jpg' %}" alt="">
+                        <a href="jungkook"><img src="{% static 'img/jungkook2.jpg' %}" alt=""></a>
                     </li>
                 </div>
             </div>
