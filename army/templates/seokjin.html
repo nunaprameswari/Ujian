@@ -13,8 +13,12 @@
             background: url('./static/img/jin.png');
         }
 
-        header .menu_side .playlist {
+        header .menu_side .playlist a {
             text-decoration: none;
+            color: #4c5262;
+        }
+
+        header .menu_side .playlist a:hover {
             color: #d47ef7;
         }
     </style>
@@ -26,7 +30,7 @@
         <div class="menu_side">
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
-                <h4 class="active"><i class='bx bx-music'></i><a href="music"> Music</h4></a>
+                <h4><span></span><a href="music"> Music</h4></a>
                 <h4><span></span> My favorite</h4>
             </div>
             <div class="menu_song">
@@ -78,6 +82,9 @@
                 <ul>
                     <li>Discover <span></span></li>
                     <li>Album Music</li>
+                    <li><a href="admin">Admin</a></li>
+                    <li><a href="idol">Idol</a></li>
+                    <li><a href="artist">Artist</a></li>
                 </ul>
                 <div class="search">
                     <i class='bx bx-search-alt'></i>
@@ -89,7 +96,7 @@
             </nav>
             <div class="content">
                 <h1>Kim Seokjin</h1>
-                <p>"chase your dreams with a forever young soul, even if you fall, <br> get hurt, keep moving forward to achieve your dreams" <br> -BTS~young forever</p>
+                <p>"If you find it difficult to face doubt and uncertainty, <br> allow yourself to move forward slowly, step by step, <br> maybe you will find that there is one step that you missed and <br> you will succeed in getting through it." <br> ~Kim Seokjin~</p>
             </div>
 
             <div class="popular_song">
@@ -232,29 +239,32 @@
             <div class="artist">
                 <div class="h4">
                     <h4>Artist</h4>
-                    <div class="btn"></div>
+                    <div class="btn">
+                        <i class="bx bxs-chevron-left" id="pop_art_left"></i>
+                        <i class="bx bxs-chevron-right" id="pop_art_right"></i>
+                    </div>
                 </div>
                 <div class="item">
                     <li>
-                        <img src="{% static 'img/seokjin.jpg' %}" alt="">
+                        <a href="seokjin"><img src="{% static 'img/seokjin.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/yoongi.jpg' %}" alt="">
+                        <a href="yoongi"><img src="{% static 'img/yoongi.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/hope0.jpg' %}" alt="">
+                        <a href="hope"><img src="{% static 'img/hope1.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/namu0.jpg' %}" alt="">
+                        <a href="namu"><img src="{% static 'img/namu0.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/jimin1.jpg' %}" alt="">
+                        <a href="jimin"><img src="{% static 'img/jimin1.jpg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/taehyung.jpg' %}" alt="">
+                        <a href="taehyung"><img src="{% static 'img/taehyung.jpeg' %}" alt=""></a>
                     </li>
                     <li>
-                        <img src="{% static 'img/jungkook1.jpg' %}" alt="">
+                        <a href="jungkook"><img src="{% static 'img/jungkook2.jpg' %}" alt=""></a>
                     </li>
                 </div>
             </div>
