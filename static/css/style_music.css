@@ -766,7 +766,7 @@ header .song_side .artist .item::-webkit-scrollbar {
 header .song_side .artist .item li {
     list-style-type: none;
     position: relative;
-    min-width: 60px;
+    min-width: 100px;
     height: 60px;
     border-radius: 50%;
     margin-right: 20px;
