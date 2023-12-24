@@ -8,6 +8,7 @@ urlpatterns = [
     path('hope', views.hope, name='hope'),
     path('namu', views.namu, name='namu'),
     path('jimin', views.jimin, name='jimin'),
+    path('taehyung', views.taehyung, name='taehyung'),
     path('idol', views.idol, name='idol'),
     path('artist', views.artist, name='artist'),
     path('data', views.data, name='data'),
