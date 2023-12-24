@@ -12,6 +12,10 @@ def seokjin(request):
     template = loader.get_template('seokjin.html')
     return HttpResponse(template.render())
 
+def yoongi(request):
+    template = loader.get_template('yoongi.html')
+    return HttpResponse(template.render())
+
 def artist(request):
     bangtan = Idol.objects.all().values() 
     template = loader.get_template('artist.html')
