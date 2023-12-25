@@ -3,104 +3,104 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Epiphany <br>
-        <div class="album">Love Yourself 结 Answer (2018)</div>`,
+        songName: `Arson <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/arson.jpg",
     },
     {
         id: '2',
-        songName: `Super Tuna <br>
-        <div class="album">슈퍼 참치 (2021)</div>`,
+        songName: `= (Equal Sign) <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/equal.jpg",
     },
     {
         id: '3',
-        songName: `The Astronaut <br>
-        <div class="album">The Astronaut (2022)</div>`,
+        songName: `Daydream <br>
+        <div class="album">Hope World (2018)</div>`,
         poster: "./static/img/hope/daydream.jpg",
     },
     {
         id: '4',
-        songName: `Moon <br>
-        <div class="album">Map Of The Soul 7 (2020)</div>`,
+        songName: `Future (Lollapalooza ver.) <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/future.jpg",
     },
     {
         id: '5',
-        songName: `Tonight <br>
-        <div class="album">JIN (2019)</div>`,
+        songName: `Airplane <br>
+        <div class="album">Hope World (2018)</div>`,
         poster: "./static/img/hope/aiplane.jpg",
     },
     {
         id: '6',
-        songName: `Epiphany (Jin Demo Ver.) <br>
-        <div class="album">PROOF (2022) -C (cd2)-</div>`,
+        songName: `MORE <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/more.jpg",
     },
     {
         id: '7',
-        songName: `Autumn Outside The Post Office <br>
-        <div class="album">In Front of the Post Office in Autumn (1994)</div>`,
+        songName: `Music Box: Reflection <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/box.jpeg",
     },
     {
         id: '8',
-        songName: `Abyss <br>
-        <div class="album">Abyss (2022)</div>`,
+        songName: `on the street<br>
+        <div class="album">On the street (2023)</div>`,
         poster: "./static/img/hope/street.jpeg",
     },
     {
         id: '9',
-        songName: `Awake (Jin Solo) <br>
-        <div class="album">WINGS (2016)</div>`,
+        songName: `Pandora’s Box <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/pandoras.png",
     },
     {
         id: '10',
-        songName: `Trouble <br>
-        <div class="album">RM & JIN (2012)</div>`,
+        songName: `Rush Hour (Feat. j-hope of BTS) <br>
+        <div class="album">Rush Hour (2022)</div>`,
         poster: "./static/img/hope/rush.jpg",
     },
     {
         id: '11',
-        songName: `I Love You <br>
-        <div class="album">Mate Cover</div>`,
+        songName: `Safety Zone <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/safety.jpg",
     },
     {
         id: '12',
-        songName: `MOM <br>
-        <div class="album">Ra.D cover</div>`,
+        songName: `STOP <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/future.jpg",
     },
     {
         id: '13',
-        songName: `Yours <br>
-        <div class="album">Drama-thriller Korea Jirisan</div>`,
+        songName: `What If... <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/what_if.jpg",
     },
     {
         id: '14',
-        songName: `Even If I Die, It's You <br>
-        <div class="album">HWARANG, Pt. 2 (Music from the Original TV Series) (2016)</div>`,
+        songName: `Blue Side (Outro) <br>
+        <div class="album">Hope World (2018)</div>`,
         poster: "./static/img/hope/blue_side.jpg",
     },
     {
         id: '15',
-        songName: `So Far Away <br>
-        <div class="album">Agust D (2016)</div>`,
+        songName: `Intro <br>
+        <div class="album">Jack in The Box (2022)</div>`,
         poster: "./static/img/hope/intro.jpg",
     },
     {
         id: '16',
-        songName: `So Far Away <br>
-        <div class="album">Agust D (2016)</div>`,
+        songName: `Chicken Noodle Soup (feat. Becky G) <br>
+        <div class="album">Chicken Noodle Soup</div>`,
         poster: "./static/img/hope/chicken.png",
     },
     {
         id: '17',
-        songName: `So Far Away <br>
-        <div class="album">Agust D (2016)</div>`,
+        songName: `Hangsang <br>
+        <div class="album">Hope World (2018)</div>`,
         poster: "./static/img/hope/hangsang.jpg",
     },
 ]
