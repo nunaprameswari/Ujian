@@ -5,91 +5,103 @@ const songs = [
         id: '1',
         songName: `Epiphany <br>
         <div class="album">Love Yourself 结 Answer (2018)</div>`,
-        poster: "./static/img/seokjin/ephiphany.jpg",
+        poster: "./static/img/hope/arson.jpg",
     },
     {
         id: '2',
         songName: `Super Tuna <br>
         <div class="album">슈퍼 참치 (2021)</div>`,
-        poster: "./static/img/seokjin/super_tuna.jpg",
+        poster: "./static/img/hope/equal.jpg",
     },
     {
         id: '3',
         songName: `The Astronaut <br>
         <div class="album">The Astronaut (2022)</div>`,
-        poster: "./static/img/seokjin/the_astronaut.jpg",
+        poster: "./static/img/hope/daydream.jpg",
     },
     {
         id: '4',
         songName: `Moon <br>
         <div class="album">Map Of The Soul 7 (2020)</div>`,
-        poster: "./static/img/seokjin/moon.jpg",
+        poster: "./static/img/hope/future.jpg",
     },
     {
         id: '5',
         songName: `Tonight <br>
         <div class="album">JIN (2019)</div>`,
-        poster: "./static/img/seokjin/tonight.jpg",
+        poster: "./static/img/hope/aiplane.jpg",
     },
     {
         id: '6',
         songName: `Epiphany (Jin Demo Ver.) <br>
         <div class="album">PROOF (2022) -C (cd2)-</div>`,
-        poster: "./static/img/seokjin/epiphany_demo.jpg",
+        poster: "./static/img/hope/more.jpg",
     },
     {
         id: '7',
         songName: `Autumn Outside The Post Office <br>
         <div class="album">In Front of the Post Office in Autumn (1994)</div>`,
-        poster: "./static/img/seokjin/autumn.jpg",
+        poster: "./static/img/hope/box.jpeg",
     },
     {
         id: '8',
         songName: `Abyss <br>
         <div class="album">Abyss (2022)</div>`,
-        poster: "./static/img/seokjin/abyss.jpg",
+        poster: "./static/img/hope/street.jpeg",
     },
     {
         id: '9',
         songName: `Awake (Jin Solo) <br>
         <div class="album">WINGS (2016)</div>`,
-        poster: "./static/img/seokjin/awake.jpg",
+        poster: "./static/img/hope/pandoras.png",
     },
     {
         id: '10',
         songName: `Trouble <br>
         <div class="album">RM & JIN (2012)</div>`,
-        poster: "./static/img/seokjin/trouble.jpg",
+        poster: "./static/img/hope/rush.jpg",
     },
     {
         id: '11',
         songName: `I Love You <br>
         <div class="album">Mate Cover</div>`,
-        poster: "./static/img/seokjin/love.jpg",
+        poster: "./static/img/hope/safety.jpg",
     },
     {
         id: '12',
         songName: `MOM <br>
         <div class="album">Ra.D cover</div>`,
-        poster: "./static/img/seokjin/mom.jpg",
+        poster: "./static/img/hope/future.jpg",
     },
     {
         id: '13',
         songName: `Yours <br>
         <div class="album">Drama-thriller Korea Jirisan</div>`,
-        poster: "./static/img/seokjin/yours.jpg",
+        poster: "./static/img/hope/what_if.jpg",
     },
     {
         id: '14',
         songName: `Even If I Die, It's You <br>
         <div class="album">HWARANG, Pt. 2 (Music from the Original TV Series) (2016)</div>`,
-        poster: "./static/img/seokjin/even.jpg",
+        poster: "./static/img/hope/blue_side.jpg",
     },
     {
         id: '15',
         songName: `So Far Away <br>
         <div class="album">Agust D (2016)</div>`,
-        poster: "./static/img/seokjin/so_far.jpg",
+        poster: "./static/img/hope/intro.jpg",
+    },
+    {
+        id: '16',
+        songName: `So Far Away <br>
+        <div class="album">Agust D (2016)</div>`,
+        poster: "./static/img/hope/chicken.png",
+    },
+    {
+        id: '17',
+        songName: `So Far Away <br>
+        <div class="album">Agust D (2016)</div>`,
+        poster: "./static/img/hope/hangsang.jpg",
     },
 ]
 
