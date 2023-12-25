@@ -85,6 +85,12 @@ const songs = [
         <div class="album">HWARANG, Pt. 2 (Music from the Original TV Series) (2016)</div>`,
         poster: "./static/img/seokjin/even.jpg",
     },
+    {
+        id: '15',
+        songName: `So Far Away <br>
+        <div class="album">Agust D (2016)</div>`,
+        poster: "./static/img/seokjin/so_far.jpg",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {

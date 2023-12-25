@@ -163,11 +163,11 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `./static/songs/seokjin/${index}.mp3`;
+        music.src = `./static/songs/yoongi/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
-        download_music.href = `./static/songs/seokjin/${index}.mp3`;
+        download_music.href = `./static/songs/yoongi/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -268,7 +268,7 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
 
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/yoongi/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -297,7 +297,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/yoongi/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -381,11 +381,11 @@ const next_music = () => {
     } else {
         index ++;
     }
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/yoongi/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/yoongi/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -408,11 +408,11 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/yoongi/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/yoongi/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -439,11 +439,11 @@ const random_music = () => {
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/yoongi/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/yoongi/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
