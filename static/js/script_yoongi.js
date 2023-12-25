@@ -107,13 +107,13 @@ const songs = [
         id: '18',
         songName: `Geugya <br>
         <div class="album">D-Day (2023)</div>`,
-        poster: "./static/img/yoongi/guegya.jpeg",
+        poster: "./static/img/yoongi/geugya.png",
     },
     {
         id: '19',
         songName: `Honsool <br>
         <div class="album">D-2 (2020)</div>`,
-        poster: "./static/img/yoongi/honsool.jpeg",
+        poster: "./static/img/yoongi/honsool.jpg",
     },
 ]
 
