@@ -28,92 +28,62 @@ const songs = [
     {
         id: '5',
         songName: `Tonight <br>
-        <div class="album">JIN</div>`,
+        <div class="album">JIN (2019)</div>`,
         poster: "./static/img/seokjin/tonight.jpg",
     },
     {
         id: '6',
-        songName: `2 Blood Sweat and Tears
-        <div class="album">WINGS (2016)</div>`,
-        poster: "./static/img/Blood_Sweat_Tears1.jpg",
+        songName: `Epiphany (Jin Demo Ver.) <br>
+        <div class="album">PROOF (2022) -C (cd2)-</div>`,
+        poster: "./static/img/seokjin/epiphany_demo.jpg",
     },
     {
         id: '7',
-        songName: `Boy With Luv (Feat. Halsey)
-        <div class="album">Map Of The Soul : PERSONA (2020)</div>`,
-        poster: "./static/img/Boy_With_Luv1.jpg",
+        songName: `Autumn Outside The Post Office <br>
+        <div class="album">In Front of the Post Office in Autumn (1994)</div>`,
+        poster: "./static/img/seokjin/autumn.jpg",
     },
     {
         id: '8',
-        songName: `Butter
-        <div class="album">BUTTER (2021)</div>`,
-        poster: "./static/img/Butter1.jpg",
+        songName: `Abyss <br>
+        <div class="album">Abyss (2022)</div>`,
+        poster: "./static/img/seokjin/abyss.jpg",
     },
     {
         id: '9',
-        songName: `DNA
-        <div class="album">Love Yourself 承 Her (2017)</div>`,
-        poster: "./static/img/DNA1.jpg",
+        songName: `Awake (Jin Solo) <br>
+        <div class="album">WINGS (2016)</div>`,
+        poster: "./static/img/seokjin/awake.jpg",
     },
     {
         id: '10',
-        songName: `쩔어 (Dope)
-        <div class="album">In The Mood For Love pt.1 (2015)</div>`,
-        poster: "./static/img/DOPE1.jpg",
+        songName: `Trouble <br>
+        <div class="album">RM & JIN (2012)</div>`,
+        poster: "./static/img/seokjin/trouble.jpg",
     },
     {
         id: '11',
-        songName: `Dynamite
-        <div class="album">Dynamite (2020)</div>`,
-        poster: "./static/img/Dynamite1.jpeg",
+        songName: `I Love You <br>
+        <div class="album">Mate Cover</div>`,
+        poster: "./static/img/seokjin/love.jpg",
     },
     {
         id: '12',
-        songName: `Fake Love
-        <div class="album">Love Yourself 轉 Tear (2018)</div>`,
-        poster: "./static/img/FAKE_LOVE1.jpg",
+        songName: `MOM <br>
+        <div class="album">Ra.D cover</div>`,
+        poster: "./static/img/seokjin/mom.jpg",
     },
     {
         id: '13',
-        songName: `고민보다 Go (Go Go)
-        <div class="album">Love Yourself 承 Her (2017)</div>`,
-        poster: "./static/img/Go_Go1.jpg",
+        songName: `Yours <br>
+        <div class="album">Drama-thriller Korea Jirisan</div>`,
+        poster: "./static/img/seokjin/yours.jpg",
     },
     {
         id: '14',
-        songName: `Danger <br>
-        <div class="album">Dark & Wild (2014)</div>`,
-        poster: "./static/img/danger1.png",
-    },
-    {
-        id: '15',
-        songName: `MIC Drop
-        <div class="album">Love Yourself 承 Her (2017)</div>`,
-        poster: "./static/img/mic_drop1.jpg",
-    },
-    {
-        id: '16',
-        songName: `ON
-        <div class="album">Map Of The Soul 7 (2020)</div>`,
-        poster: "./static/img/ON1.jpeg",
-    },
-    {
-        id: '17',
-        songName: `Permission to Dance
-        <div class="album">BUTTER (2021)</div>`,
-        poster: "./static/img/Permission_to_Dance1.jpeg",
-    },
-    {
-        id: '18',
-        songName: `RUN
-        <div class="album">In The Mood For Love pt.2 (2016)</div>`,
-        poster: "./static/img/Run1.jpg",
-    },
-    {
-        id: '19',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
-        poster: "./static/img/Yet_To_Come1.png",
+        songName: `Even If I Die, It's You <br>
+        <div class="album">HWARANG, Pt. 2 (Music from the Original TV Series) (2016)</div>`,
+        poster: "./static/img/seokjin/even.jpg",
     },
 ]
 
