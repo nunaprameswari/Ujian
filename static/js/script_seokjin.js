@@ -449,3 +449,12 @@ music.addEventListener('ended', () => {
             break;
     }
 })
+
+
+let menu_list_active_button = document.getElementById('menu_list_active_button');
+    let menu_side = document.getElementsByClassName('menu_side')[0];
+
+    menu_list_active_button.addEventListener('click', () => {
+    menu_side.style.transform = "unset";
+    menu_list_active_button.style.opacity = 0;
+    })
