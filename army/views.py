@@ -4,6 +4,10 @@ from django.template import loader
 from .models import Artist, Idol, Instagram
 from .forms import InstagramForm
 # Create your views here.
+def delete(request, delete_id):
+    Instagram.objects.filter(id=delete_id).delete()
+    return redirect('list')
+
 def create(request):
     akun_form = InstagramForm(request.POST or None)
 

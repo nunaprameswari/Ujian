@@ -16,6 +16,7 @@
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
                 <th scope="col">User Name</th>
+                <th scope="col">Hapus</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,7 @@
                 <td>{{akun.nama_depan}}</td>
                 <td>{{akun.nama_belakang}}</td>
                 <td>{{akun.username}}</td>
+                <td><a class="btn btn-danger" href="{% url 'delete' akun.id %}">Delete</a></td>
             </tr>
             {% endfor %}
         </tbody>
