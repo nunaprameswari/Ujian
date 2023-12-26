@@ -1,8 +1,34 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Artist, Idol
+from .models import Artist, Idol, Instagram
+from .forms import InstagramForm
 # Create your views here.
+def create(request):
+    akun_form = InstagramForm(request.POST or None)
+
+    if request.method == 'POST':
+        if akun_form.is_valid():
+            akun_form.save()
+
+        return redirect('list')
+
+    context = {
+        "page_title":"Tambah akun",
+        "akun_form":akun_form,
+    }
+
+    return render(request, 'create.html', context)
+
+def list(request):
+    semua_akun = Instagram.objects.all()
+
+    context = {
+        'page_title':'Sosial_Media',
+        'semua_akun':semua_akun,
+    }
+
+    return render(request, 'list.html', context)
 
 def music(request):
     template = loader.get_template('music.html')
