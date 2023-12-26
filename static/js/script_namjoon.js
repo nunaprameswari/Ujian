@@ -87,13 +87,13 @@ const songs = [
     },
     {
         id: '15',
-        songName: `Intro <br>
-        <div class="album">Jack in The Box (2022)</div>`,
+        songName: `tokyo <br>
+        <div class="album">Mono (2018)</div>`,
         poster: "./static/img/namjoon/tokyo.png",
     },
     {
         id: '16',
-        songName: `tokyo <br>
+        songName: `Uhgood <br>
         <div class="album">Mono (2018)</div>`,
         poster: "./static/img/namjoon/uhgood.jpg",
     },
