@@ -5,103 +5,103 @@ const songs = [
         id: '1',
         songName: `Arson <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/arson.jpg",
+        poster: "./static/img/namjoon/all_day.jpg",
     },
     {
         id: '2',
         songName: `= (Equal Sign) <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/equal.jpg",
+        poster: "./static/img/namjoon/badbye.jpg",
     },
     {
         id: '3',
         songName: `Daydream <br>
         <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/daydream.jpg",
+        poster: "./static/img/namjoon/chage.jpeg",
     },
     {
         id: '4',
         songName: `Future (Lollapalooza ver.) <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/future.jpg",
+        poster: "./static/img/namjoon/all_day.jpg",
     },
     {
         id: '5',
         songName: `Airplane <br>
         <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/aiplane.jpg",
+        poster: "./static/img/namjoon/everything.jpg",
     },
     {
         id: '6',
         songName: `MORE <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/more.jpg",
+        poster: "./static/img/namjoon/lonely.jpg",
     },
     {
         id: '7',
         songName: `Music Box: Reflection <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/box.jpeg",
+        poster: "./static/img/namjoon/bycycle.jpg",
     },
     {
         id: '8',
         songName: `on the street<br>
         <div class="album">On the street (2023)</div>`,
-        poster: "./static/img/hope/street.jpeg",
+        poster: "./static/img/namjoon/rain.jpg",
     },
     {
         id: '9',
         songName: `Pandora’s Box <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/pandoras.png",
+        poster: "./static/img/namjoon/hectic.jpg",
     },
     {
         id: '10',
         songName: `Rush Hour (Feat. j-hope of BTS) <br>
         <div class="album">Rush Hour (2022)</div>`,
-        poster: "./static/img/hope/rush.jpg",
+        poster: "./static/img/namjoon/moonchild.jpg",
     },
     {
         id: '11',
         songName: `Safety Zone <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/safety.jpg",
+        poster: "./static/img/namjoon/chage.jpeg",
     },
     {
         id: '12',
         songName: `STOP <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/future.jpg",
+        poster: "./static/img/namjoon/seoul.jpg",
     },
     {
         id: '13',
         songName: `What If... <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/what_if.jpg",
+        poster: "./static/img/namjoon/still_life.jpg",
     },
     {
         id: '14',
         songName: `Blue Side (Outro) <br>
         <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/blue_side.jpg",
+        poster: "./static/img/namjoon/wild_flower.jpg",
     },
     {
         id: '15',
         songName: `Intro <br>
         <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/intro.jpg",
+        poster: "./static/img/namjoon/tokyo.png",
     },
     {
         id: '16',
         songName: `Chicken Noodle Soup (feat. Becky G) <br>
         <div class="album">Chicken Noodle Soup</div>`,
-        poster: "./static/img/hope/chicken.png",
+        poster: "./static/img/namjoon/uhgood.jpg",
     },
     {
         id: '17',
         songName: `Hangsang <br>
         <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/hangsang.jpg",
+        poster: "./static/img/namjoon/yun.jpg",
     },
 ]
 
