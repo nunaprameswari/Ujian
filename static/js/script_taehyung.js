@@ -3,93 +3,75 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Epiphany <br>
-        <div class="album">Love Yourself 结 Answer (2018)</div>`,
-        poster: "./static/img/seokjin/ephiphany.jpg",
+        songName: `Scenery <br>
+        <div class="album">풍경 (2019)</div>`,
+        poster: "./static/img/tae/scenery.jpg",
     },
     {
         id: '2',
-        songName: `Super Tuna <br>
-        <div class="album">슈퍼 참치 (2021)</div>`,
-        poster: "./static/img/seokjin/super_tuna.jpg",
+        songName: `Christmas Tree (Inst.) <br>
+        <div class="album">Our Beloved Summer OST Special (2022)</div>`,
+        poster: "./static/img/tae/tree.jpg",
     },
     {
         id: '3',
-        songName: `The Astronaut <br>
-        <div class="album">The Astronaut (2022)</div>`,
-        poster: "./static/img/seokjin/the_astronaut.jpg",
+        songName: `Christmas Tree <br>
+        <div class="album">Our Beloved Summer OST Special (2022)</div>`,
+        poster: "./static/img/tae/chrismast.jpg",
     },
     {
         id: '4',
-        songName: `Moon <br>
-        <div class="album">Map Of The Soul 7 (2020)</div>`,
-        poster: "./static/img/seokjin/moon.jpg",
+        songName: `Sweet Night <br>
+        <div class="album">ITAEWON CLASS (Original Television Soundtrack) (2020)</div>`,
+        poster: "./static/img/tae/swet.jpg",
     },
     {
         id: '5',
-        songName: `Tonight <br>
-        <div class="album">JIN (2019)</div>`,
-        poster: "./static/img/seokjin/tonight.jpg",
+        songName: `Snow Flower <br>
+        <div class="album">Snow Flower (2023)</div>`,
+        poster: "./static/img/tae/snow.jpg",
     },
     {
         id: '6',
-        songName: `Epiphany (Jin Demo Ver.) <br>
-        <div class="album">PROOF (2022) -C (cd2)-</div>`,
-        poster: "./static/img/seokjin/epiphany_demo.jpg",
+        songName: `Blue <br>
+        <div class="album">Layover (2023)</div>`,
+        poster: "./static/img/tae/blue.jpg",
     },
     {
         id: '7',
-        songName: `Autumn Outside The Post Office <br>
-        <div class="album">In Front of the Post Office in Autumn (1994)</div>`,
-        poster: "./static/img/seokjin/autumn.jpg",
+        songName: `For Us <br>
+        <div class="album">Layover (2023)</div>`,
+        poster: "./static/img/tae/for.jpg",
     },
     {
         id: '8',
-        songName: `Abyss <br>
-        <div class="album">Abyss (2022)</div>`,
-        poster: "./static/img/seokjin/abyss.jpg",
+        songName: `Love Me Again <br>
+        <div class="album">Layover (2023)</div>`,
+        poster: "./static/img/tae/love.jpeg",
     },
     {
         id: '9',
-        songName: `Awake (Jin Solo) <br>
-        <div class="album">WINGS (2016)</div>`,
-        poster: "./static/img/seokjin/awake.jpg",
+        songName: `Rainy Days <br>
+        <div class="album">Layover (2023)</div>`,
+        poster: "./static/img/tae/rainy.jpg",
     },
     {
         id: '10',
-        songName: `Trouble <br>
-        <div class="album">RM & JIN (2012)</div>`,
-        poster: "./static/img/seokjin/trouble.jpg",
+        songName: `Slow Dancing <br>
+        <div class="album">Layover (2023)</div>`,
+        poster: "./static/img/tae/slow.jpg",
     },
     {
         id: '11',
-        songName: `I Love You <br>
-        <div class="album">Mate Cover</div>`,
-        poster: "./static/img/seokjin/love.jpg",
+        songName: `Slow Dancing (FRNK Remix)'  <br>
+        <div class="album">Slow Dancing Remix</div>`,
+        poster: "./static/img/tae/remix.png",
     },
     {
         id: '12',
-        songName: `MOM <br>
-        <div class="album">Ra.D cover</div>`,
-        poster: "./static/img/seokjin/mom.jpg",
-    },
-    {
-        id: '13',
-        songName: `Yours <br>
-        <div class="album">Drama-thriller Korea Jirisan</div>`,
-        poster: "./static/img/seokjin/yours.jpg",
-    },
-    {
-        id: '14',
-        songName: `Even If I Die, It's You <br>
-        <div class="album">HWARANG, Pt. 2 (Music from the Original TV Series) (2016)</div>`,
-        poster: "./static/img/seokjin/even.jpg",
-    },
-    {
-        id: '15',
-        songName: `So Far Away <br>
-        <div class="album">Agust D (2016)</div>`,
-        poster: "./static/img/seokjin/so_far.jpg",
+        songName: `Winter Bear <br>
+        <div class="album">Winter Bear (2019)</div>`,
+        poster: "./static/img/tae/winter.jpg",
     },
 ]
 
@@ -139,11 +121,11 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `./static/songs/seokjin/${index}.mp3`;
+        music.src = `./static/songs/tae/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
-        download_music.href = `./static/songs/seokjin/${index}.mp3`;
+        download_music.href = `./static/songs/tae/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -244,7 +226,7 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
 
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/tae/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -273,7 +255,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/tae/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -357,11 +339,11 @@ const next_music = () => {
     } else {
         index ++;
     }
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/tae/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/tae/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -384,11 +366,11 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/tae/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/tae/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -415,11 +397,11 @@ const random_music = () => {
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `./static/songs/seokjin/${index}.mp3`;
+    music.src = `./static/songs/tae/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/seokjin/${index}.mp3`;
+    download_music.href = `./static/songs/tae/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
