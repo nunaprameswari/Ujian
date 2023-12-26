@@ -3,105 +3,81 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Arson <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/arson.jpg",
+        songName: `Alone <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/alone.jpg",
     },
     {
         id: '2',
-        songName: `= (Equal Sign) <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/equal.jpg",
+        songName: `Angel Pt. 2 <br>
+        <div class="album">Angel Pt. 1 (FAST X Soundtrack) (2023) (2022)</div>`,
+        poster: "./static/img/jimin/angel_pt2.jpg",
     },
     {
         id: '3',
-        songName: `Daydream <br>
-        <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/daydream.jpg",
+        songName: `Christmas Love <br>
+        <div class="album">Christmas Love (2020)</div>`,
+        poster: "./static/img/jimin/love.jpg",
     },
     {
         id: '4',
-        songName: `Future (Lollapalooza ver.) <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/future.jpg",
+        songName: `Face-off <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/face_off.jpg",
     },
     {
         id: '5',
-        songName: `Airplane <br>
-        <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/aiplane.jpg",
+        songName: `Like Crazy <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/like_crazy.jpg",
     },
     {
         id: '6',
-        songName: `MORE <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/more.jpg",
+        songName: `Like Crazy (Deep House Remix) <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/deep.jpg",
     },
     {
         id: '7',
-        songName: `Music Box: Reflection <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/box.jpeg",
+        songName: `Like Crazy (Instrumental) <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/deep.jpg",
     },
     {
         id: '8',
-        songName: `on the street<br>
-        <div class="album">On the street (2023)</div>`,
-        poster: "./static/img/hope/street.jpeg",
+        songName: `Like Crazy (UK Garage Remix)<br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/UK.jpg",
     },
     {
         id: '9',
-        songName: `Pandora’s Box <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/pandoras.png",
+        songName: `Angel Pt. 1 <br>
+        <div class="album">FAST X (Speed Up / Original Motion Picture Soundtrack) (2023)</div>`,
+        poster: "./static/img/jimin/angel_pt1.jpg",
     },
     {
         id: '10',
-        songName: `Rush Hour (Feat. j-hope of BTS) <br>
-        <div class="album">Rush Hour (2022)</div>`,
-        poster: "./static/img/hope/rush.jpg",
+        songName: `Interlude : Dive <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/dive.jpg",
     },
     {
         id: '11',
-        songName: `Safety Zone <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/safety.jpg",
+        songName: `Closer Than This <br>
+        <div class="album">Closer Than This (2023)</div>`,
+        poster: "./static/img/jimin/closer.jpg",
     },
     {
         id: '12',
-        songName: `STOP <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/future.jpg",
+        songName: `Set Me Free Pt.2 <br>
+        <div class="album">Face (2023)</div>`,
+        poster: "./static/img/jimin/free.jpg",
     },
     {
         id: '13',
-        songName: `What If... <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/what_if.jpg",
-    },
-    {
-        id: '14',
-        songName: `Blue Side (Outro) <br>
-        <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/blue_side.jpg",
-    },
-    {
-        id: '15',
-        songName: `Intro <br>
-        <div class="album">Jack in The Box (2022)</div>`,
-        poster: "./static/img/hope/intro.jpg",
-    },
-    {
-        id: '16',
-        songName: `Chicken Noodle Soup (feat. Becky G) <br>
-        <div class="album">Chicken Noodle Soup</div>`,
-        poster: "./static/img/hope/chicken.png",
-    },
-    {
-        id: '17',
-        songName: `Hangsang <br>
-        <div class="album">Hope World (2018)</div>`,
-        poster: "./static/img/hope/hangsang.jpg",
+        songName: `Promise <br>
+        <div class="album">약속 (2018)</div>`,
+        poster: "./static/img/jimin/promise.jpg",
     },
 ]
 
@@ -151,11 +127,11 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `./static/songs/hope/${index}.mp3`;
+        music.src = `./static/songs/jimin/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
-        download_music.href = `./static/songs/hope/${index}.mp3`;
+        download_music.href = `./static/songs/jimin/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -285,7 +261,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `./static/songs/hope/${index}.mp3`;
+    music.src = `./static/songs/jimin/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -369,11 +345,11 @@ const next_music = () => {
     } else {
         index ++;
     }
-    music.src = `./static/songs/hope/${index}.mp3`;
+    music.src = `./static/songs/jimin/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/hope/${index}.mp3`;
+    download_music.href = `./static/songs/jimin/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -396,11 +372,11 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src = `./static/songs/hope/${index}.mp3`;
+    music.src = `./static/songs/jimin/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/hope/${index}.mp3`;
+    download_music.href = `./static/songs/jimin/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -427,11 +403,11 @@ const random_music = () => {
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `./static/songs/hope/${index}.mp3`;
+    music.src = `./static/songs/jimin/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/hope/${index}.mp3`;
+    download_music.href = `./static/songs/jimin/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
