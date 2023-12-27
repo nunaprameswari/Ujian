@@ -21,6 +21,7 @@ body {
     height: 450px;
     background: transparent;
     border: 2px solid #8115ac;
+    overflow: hidden;
 }
 
 .wrapper .form-box {
