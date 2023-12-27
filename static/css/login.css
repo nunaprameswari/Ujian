@@ -195,3 +195,15 @@ body {
     transform-origin: bottom right;
     border-bottom: 3px solid #8115ac;
 }
+
+.wrapper .bg-animate2 {
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 600px;
+    background: #1a0324;
+    transform: rotate(-11deg) skewY(-40deg);
+    transform-origin: bottom left;
+    border-top: 3px solid #8115ac;
+}
