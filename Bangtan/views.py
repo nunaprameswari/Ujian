@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 
 def menu(request):
@@ -14,6 +14,18 @@ def loginView(request):
     context = {
         'page_title': 'LOGIN',
     }
+
+    if request.method == "POST":
+        
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        user = authenticate(request, username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+
+        return redirect('menu')
 
     #username_nindia = 'admin'
     #password_nindia = 'admin123'
