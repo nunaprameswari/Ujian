@@ -178,3 +178,15 @@ body {
     font-size: 16px;
     color: #fff;
 }
+
+.wrapper .bg-animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background: linear-gradient(45deg, #1a0324, #8115ac);
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    border-bottom: 3px solid #8115ac;
+}
