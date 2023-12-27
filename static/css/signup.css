@@ -40,6 +40,10 @@ body {
     padding: 0 60px 0 40px;
 }
 
+.wrapper .form-box.register {
+    right: 0;
+}
+
 .form-box h2 {
     font-size: 32px;
     color: #fff;
