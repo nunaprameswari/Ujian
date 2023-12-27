@@ -12,5 +12,30 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #39044e;
+    background: #8115ac;
+}
+
+.wrapper {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid #000000;
+}
+
+.wrapper .form-box {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-box h2 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
 }
