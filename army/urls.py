@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('login', views.login, name='login'),
     path('delete/(?P<int:delete_id>[0-9]+)', views.delete, name='delete'),
     path('create',views.create, name='create'),
     path('list',views.list, name='list'),

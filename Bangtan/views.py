@@ -2,8 +2,10 @@ from django.http import HttpResponse
 from django.template import loader
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
+from .forms import LoginForm
 
 def login(request):
+    form = LoginForm()
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
