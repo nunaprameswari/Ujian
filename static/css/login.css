@@ -28,10 +28,14 @@ body {
     top: 0;
     width: 50%;
     height: 100%;
-    background: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.wrapper .form-box.login {
+    left: 0;
+    padding: 0 40px;
 }
 
 .form-box h2 {
@@ -54,6 +58,15 @@ body {
     border: none;
     outline: none;
     border-bottom: 2px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transition: .5px;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border-bottom-color: #000000;
 }
 
 .input-box label {
@@ -64,6 +77,13 @@ body {
     font-size: 16px;
     color: #fff;
     pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    color: #000000;
 }
 
 .input-box i {
@@ -73,6 +93,12 @@ body {
     transform: translateY(-50%);
     font-size: 18px;
     color: #fff;
+    transition: .5s;
+}
+
+.input-box input:focus~i,
+.input-box input:valid~i {
+    color: #000000;
 }
 
 .btn {
