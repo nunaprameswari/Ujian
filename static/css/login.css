@@ -88,3 +88,16 @@ body {
     color: #fff;
     font-weight: 600;
 }
+
+.form-box .logreg-link {
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.logreg-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
