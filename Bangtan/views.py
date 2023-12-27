@@ -14,13 +14,13 @@ def loginView(request):
     context = {
         'page_title': 'LOGIN',
     }
-    
-    username_nindia = 'admin'
-    password_nindia = 'admin123'
 
-    user = authenticate(request, username=username_nindia, password=password_nindia)
-    print(user)
+    #username_nindia = 'admin'
+    #password_nindia = 'admin123'
 
-    login(request, user)
+    #user = authenticate(request, username=username_nindia, password=password_nindia)
+    #print(user)
+
+    #ogin(request, user)
 
     return render(request, 'login.html', context)
