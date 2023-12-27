@@ -3,75 +3,87 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Scenery <br>
-        <div class="album">풍경 (2019)</div>`,
-        poster: "./static/img/tae/scenery.jpg",
+        songName: `Closer to You <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/closer.jpg",
     },
     {
         id: '2',
-        songName: `Christmas Tree (Inst.) <br>
-        <div class="album">Our Beloved Summer OST Special (2022)</div>`,
-        poster: "./static/img/tae/tree.jpg",
+        songName: `Somebody <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/somebody.png",
     },
     {
         id: '3',
-        songName: `Christmas Tree <br>
-        <div class="album">Our Beloved Summer OST Special (2022)</div>`,
-        poster: "./static/img/tae/chrismast.jpg",
+        songName: `My You <br>
+        <div class="album">My You (2022)</div>`,
+        poster: "./static/img/koki/my.jpg",
     },
     {
         id: '4',
-        songName: `Sweet Night <br>
-        <div class="album">ITAEWON CLASS (Original Television Soundtrack) (2020)</div>`,
-        poster: "./static/img/tae/swet.jpg",
+        songName: `Please Don't Change <br>
+        <div class="album">Golden (2020)</div>`,
+        poster: "./static/img/koki/please.jpg",
     },
     {
         id: '5',
-        songName: `Snow Flower <br>
-        <div class="album">Snow Flower (2023)</div>`,
-        poster: "./static/img/tae/snow.jpg",
+        songName: `Still With You <br>
+        <div class="album">Still With You (2020)</div>`,
+        poster: "./static/img/koki/still.jpg",
     },
     {
         id: '6',
-        songName: `Blue <br>
-        <div class="album">Layover (2023)</div>`,
-        poster: "./static/img/tae/blue.jpg",
+        songName: `TOO MUCH <br>
+        <div class="album">The First Time (2023)</div>`,
+        poster: "./static/img/koki/too.jpeg",
     },
     {
         id: '7',
-        songName: `For Us <br>
-        <div class="album">Layover (2023)</div>`,
-        poster: "./static/img/tae/for.jpg",
+        songName: `Too Sad to Dance <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/sad.jpg",
     },
     {
         id: '8',
-        songName: `Love Me Again <br>
-        <div class="album">Layover (2023)</div>`,
-        poster: "./static/img/tae/love.jpeg",
+        songName: `Yes or No <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/yes.jpg",
     },
     {
         id: '9',
-        songName: `Rainy Days <br>
-        <div class="album">Layover (2023)</div>`,
-        poster: "./static/img/tae/rainy.jpg",
+        songName: `Shot Glass of Tears <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/shot.jpg",
     },
     {
         id: '10',
-        songName: `Slow Dancing <br>
-        <div class="album">Layover (2023)</div>`,
-        poster: "./static/img/tae/slow.jpg",
+        songName: `3D <br>
+        <div class="album">3D : The Remixes (2023)</div>`,
+        poster: "./static/img/koki/3d.png",
     },
     {
         id: '11',
-        songName: `Slow Dancing (FRNK Remix)'  <br>
-        <div class="album">Slow Dancing Remix</div>`,
-        poster: "./static/img/tae/remix.png",
+        songName: `Hate You'  <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/hate.jpg",
     },
     {
         id: '12',
-        songName: `Winter Bear <br>
-        <div class="album">Winter Bear (2019)</div>`,
-        poster: "./static/img/tae/winter.jpg",
+        songName: `Seven <br>
+        <div class="album">Seven (Weekend Ver.) (2023)</div>`,
+        poster: "./static/img/koki/seven.jpeg",
+    },
+    {
+        id: '13',
+        songName: `Standing Next to You <br>
+        <div class="album">Golden (2023)</div>`,
+        poster: "./static/img/koki/next.jpeg",
+    },
+    {
+        id: '14',
+        songName: `Standing Next to You - Usher Remix <br>
+        <div class="album">COMING HOME (2024)</div>`,
+        poster: "./static/img/koki/you.jpg",
     },
 ]
 
@@ -121,11 +133,11 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `./static/songs/tae/${index}.mp3`;
+        music.src = `./static/songs/koki/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
-        download_music.href = `./static/songs/tae/${index}.mp3`;
+        download_music.href = `./static/songs/koki/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -226,7 +238,7 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
 
-    music.src = `./static/songs/tae/${index}.mp3`;
+    music.src = `./static/songs/koki/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -255,7 +267,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `./static/songs/tae/${index}.mp3`;
+    music.src = `./static/songs/koki/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -339,11 +351,11 @@ const next_music = () => {
     } else {
         index ++;
     }
-    music.src = `./static/songs/tae/${index}.mp3`;
+    music.src = `./static/songs/koki/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/tae/${index}.mp3`;
+    download_music.href = `./static/songs/koki/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -366,11 +378,11 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src = `./static/songs/tae/${index}.mp3`;
+    music.src = `./static/songs/koki/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/tae/${index}.mp3`;
+    download_music.href = `./static/songs/koki/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -397,11 +409,11 @@ const random_music = () => {
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `./static/songs/tae/${index}.mp3`;
+    music.src = `./static/songs/koki/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/tae/${index}.mp3`;
+    download_music.href = `./static/songs/koki/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
