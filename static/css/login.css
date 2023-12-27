@@ -38,7 +38,6 @@ body {
 .wrapper .form-box.login {
     left: 0;
     padding: 0 60px 0 40px;
-    display: none;
 }
 
 .form-box h2 {
@@ -168,7 +167,6 @@ body {
     right: 0;
     text-align: right;
     padding: 0 40px 60px 150px;
-    display: none;
 }
 
 .info-text h2 {
@@ -190,20 +188,7 @@ body {
     width: 850px;
     height: 600px;
     background: linear-gradient(45deg, #1a0324, #8115ac);
-    /*transform: rotate(10deg) skewY(40deg);*/
-    transform: rotate(0) skewY(0);
+    transform: rotate(10deg) skewY(40deg);
     transform-origin: bottom right;
     border-bottom: 3px solid #8115ac;
-}
-
-.wrapper .bg-animate2 {
-    position: absolute;
-    top: 100%;
-    left: 250px;
-    width: 850px;
-    height: 600px;
-    background: #1a0324;
-    transform: rotate(-11deg) skewY(-40deg);
-    transform-origin: bottom left;
-    border-top: 3px solid #8115ac;
 }
