@@ -194,17 +194,3 @@ body {
     border-top: 3px solid #8115ac;
 }
 
-.wrapper .input-box {
-    width: 100%;
-    height: 430px;
-    border: 1px solid #fff;
-    overflow: auto;
-}
-
-.wrapper .input-box::-webkit-scrollbar {
-    width: 5px;
-}
-
-.wrapper .input-box::-webkit-scrollbar-thumb {
-    background: #611c81;
-}

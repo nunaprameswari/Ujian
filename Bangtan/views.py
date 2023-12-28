@@ -16,7 +16,7 @@ def signup(request):
         password1 = request.POST['password1']
         password2 = request.POST['password2']
 
-        data = User.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password1=password1)
+        data = User.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password=password1)
         data.save()
     
     return render(request, 'signup.html')

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/signup.css' %}">
+    <link rel="stylesheet" href="">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Sign UP</title>
 </head>
@@ -19,33 +19,33 @@
             <form method="POST">
                 {% csrf_token %}
                 <div class="input-box">
-                    <label for="Fisrt Name">First Name</label>
                     <input type="text" placeholder="Enter First Name" name="first_name" id="email" required>
+                    <label for="Fisrt Name">First Name</label>
                     <i class='bx bx-user'></i>
                 </div>
                 <div class="input-box">
-                    <label for="Last Name">Last Name</label>
                     <input type="text" placeholder="Enter Last Name" name="last_name" id="email" required>
+                    <label for="Last Name">Last Name</label>
                     <i class='bx bx-user'></i>
                 </div>
                 <div class="input-box">
-                    <label for="email">Email</label>
                     <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    <label for="email">Email</label>
                     <i class='bx bx-user'></i>
                 </div>
                 <div class="input-box">
-                    <label for="Username">Username</label>
                     <input type="text" placeholder="Enter Username" name="username" id="email" required>
+                    <label for="Username">Username</label>
                     <i class='bx bx-lock'></i>
                 </div>
                 <div class="input-box">
-                    <label for="psw">Password</label>
                     <input type="password" placeholder="Enter Password" name="password1" id="psw" required>
+                    <label for="psw">Password</label>
                     <i class='bx bx-lock'></i>
                 </div>
                 <div class="input-box">
-                    <label for="psw-repeat">Repeat Password</label>
                     <input type="password" placeholder="Repeat Password" name="password2" id="psw-repeat" required>
+                    <label for="psw-repeat">Repeat Password</label>
                     <i class='bx bx-lock'></i>
                 </div>
                 <button type="submit" class="registerbtn">Register</button>
