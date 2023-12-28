@@ -193,6 +193,60 @@ const songs = [
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_4.jpg",
     },
+    {
+        id: '33',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_5.jpg",
+    },
+    {
+        id: '34',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_6.jpg",
+    },
+    {
+        id: '35',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_7.jpg",
+    },
+    {
+        id: '36',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_8.jpg",
+    },
+    {
+        id: '37',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_9.jpg",
+    },
+    {
+        id: '38',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_10.jpg",
+    },
+    {
+        id: '39',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_11.jpg",
+    },
+    {
+        id: '40',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_12.jpg",
+    },
+    {
+        id: '41',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_13.jpg",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
