@@ -40,6 +40,10 @@ def music(request):
     template = loader.get_template('music.html')
     return HttpResponse(template.render())
 
+def my_album(request):
+    template = loader.get_template('my_album.html')
+    return HttpResponse(template.render())
+
 def seokjin(request):
     template = loader.get_template('seokjin.html')
     return HttpResponse(template.render())
