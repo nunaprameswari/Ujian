@@ -1,35 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
-from django.shortcuts import render, redirect
-from django.contrib.auth.models import User, auth
-
-Class LoginForm:
-    def login(self, request):
-    if request.method=="POST":
-        username = request.POST['username']
-        password = request.POST['password']
-        user = auth.authenticate(username=username, password=password)
-
-    if User is not None:
-        auth.login(request,User)
-        return redirect('music')
-    
-    return render(request, 'login.html')
-
-def signup(request):
-    if request.method=='POST':
-        first_name = request.POST['first_name']
-        last_name = request.POST['last_name']
-        email = request.POST['email']
-        username = request.POST['username']
-        password1 = request.POST['password1']
-        password2 = request.POST['password2']
-
-        data = User.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password=password1)
-        data.save()
-        return redirect('login')
-    
-    return render(request, 'signup.html')
+from django.shortcuts import render
 
 def music(request):
     template = loader.get_template('music.html')
