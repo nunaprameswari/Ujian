@@ -17,15 +17,16 @@
         
         <div class="form-box login">
             <h2>Login</h2>
-            <form action="#">
+            <form method="POST">
+                {% csrf_token %}
                 <div class="input-box">
-                    <input type="text" required>
-                    <label>Username</label>
+                    <input type="text" placeholder="Enter Username" name="username" id="email" required>
+                    <label for="Username">Username</label>
                     <i class='bx bx-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" required>
-                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password" name="password" id="psw" required>
+                    <label for="psw">Password</label>
                     <i class='bx bx-lock'></i>
                 </div>
                 <button type="submit" class="btn">Login</button>
