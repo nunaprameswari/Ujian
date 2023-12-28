@@ -169,6 +169,30 @@ const songs = [
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/Yet_To_Come1.png",
     },
+    {
+        id: '29',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_1.jpg",
+    },
+    {
+        id: '30',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_2.png",
+    },
+    {
+        id: '31',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_3.jpg",
+    },
+    {
+        id: '32',
+        songName: `Yet To Come (The Most Beatiful Moment)
+        <div class="album">PROOF (2022)</div>`,
+        poster: "./static/img/album/album_4.jpg",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
