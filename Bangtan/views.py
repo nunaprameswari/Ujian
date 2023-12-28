@@ -10,8 +10,8 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
 
     if user is not None:
-        auth.login(request.user)
-        return render('music')
+        auth.login(request,user)
+        return redirect('music')
     
     return render(request, 'login.html')
 
@@ -29,3 +29,7 @@ def signup(request):
         return redirect('login')
     
     return render(request, 'signup.html')
+
+def music(request):
+    template = loader.get_template('music.html')
+    return HttpResponse(template.render())
