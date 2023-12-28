@@ -1,11 +1,19 @@
 from django.http import HttpResponse
 from django.template import loader
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 
 def login(request):
-    template = loader.get_template('login.html')
-    return HttpResponse(template.render())
+    if request.method=="POST":
+        username = request.POST['username']
+        password = request.POST['password']
+        user = auth.authenticate(username=username, password=password)
+
+    if user is not None:
+        auth.login(request.user)
+        return render('music')
+    
+    return render(request, 'login.html')
 
 def signup(request):
     if request.method=='POST':
@@ -18,5 +26,6 @@ def signup(request):
 
         data = User.objects.create_user(first_name=first_name, last_name=last_name, email=email, username=username, password=password1)
         data.save()
+        return redirect('login')
     
     return render(request, 'signup.html')
