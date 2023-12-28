@@ -1,0 +1,20 @@
+.judul {
+    font-style: normal;
+    font-size: 1em;
+    padding: 0px;
+}
+
+.harga {
+    font-style: normal;
+    font-size: 1em;
+    padding: 0px;
+}
+
+.img {
+    width: 270px;
+    height: 350px;
+}
+
+.figure {
+    width: 250px;
+}
