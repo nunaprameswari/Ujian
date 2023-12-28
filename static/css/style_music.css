@@ -175,13 +175,6 @@ header .menu_side .menu_song li .bx {
     right: 20px;
 }
 
-header .menu_side .menu_song #heart {
-    font-size: 20px;
-    color: #8131a7;
-    position: absolute;
-    right: 40px;
-}
-
 header .master_play {
     display: flex;
     align-items: center;
@@ -430,15 +423,6 @@ header .master_play .vol .dot::before {
 
 header .song_side {
     z-index: 2;
-}
-
-header .song_side::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 285px;
-    background: url('../img/a.png');
-    z-index: -1;
 }
 
 header .song_side nav {
