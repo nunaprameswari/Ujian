@@ -3,14 +3,15 @@ from django.template import loader
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 
-def login(request):
+Class LoginForm:
+    def login(self, request):
     if request.method=="POST":
         username = request.POST['username']
         password = request.POST['password']
         user = auth.authenticate(username=username, password=password)
 
-    if user is not None:
-        auth.login(request,user)
+    if User is not None:
+        auth.login(request,User)
         return redirect('music')
     
     return render(request, 'login.html')

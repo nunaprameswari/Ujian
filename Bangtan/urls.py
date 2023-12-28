@@ -20,8 +20,8 @@ from .views import login, signup, music
 
 urlpatterns = [
     path('', login, name='login'),
-    path('signup', views.signup, name='signup'),
-    path('music', views.music, name='music'),
+    path('signup', signup, name='signup'),
+    path('music', music, name='music'),
     path('', include('army.urls')),
     path('admin/', admin.site.urls),
 ]
