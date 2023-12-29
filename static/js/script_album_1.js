@@ -524,7 +524,7 @@ const random_music = () => {
     } else {
         index = Math.floor((Math.random() * songs.length) + 1);
     }
-    music.src = `./static/songs/${index}.mp3`;
+    music.src = `./static/songs/album_1/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
