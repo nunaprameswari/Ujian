@@ -6,7 +6,6 @@ urlpatterns = [
     path('create',views.create, name='create'),
     path('list',views.list, name='list'),
     path('music', views.music, name='music'),
-    path('my_album', views.my_album, name='my_album'),
     path('seokjin', views.seokjin, name='seokjin'),
     path('yoongi', views.yoongi, name='yoongi'),
     path('hope', views.hope, name='hope'),
