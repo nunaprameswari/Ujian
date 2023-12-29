@@ -5,31 +5,31 @@ const songs = [
         id: '1',
         songName: `Intro: 2 Cool 4 Skool (feat. DJ Friz) <br>
         <div class="album">2 Cool 4 Skool [1st Single]</div>`,
-        poster: "./static/img/anpanman1.jpg",
+        poster: "./static/img/album/album_1.jpg",
     },
     {
         id: '2',
         songName: `We Are Bulletproof Pt.2 <br>
         <div class="album">2 Cool 4 Skool [1st Single]</div>`,
-        poster: "./static/img/baepsae1.jpg",
+        poster: "./static/img/album/album_1.jpg",
     },
     {
         id: '3',
         songName: `No More Dream <br>
         <div class="album">2 Cool 4 Skool [1st Single]</div>`,
-        poster: "./static/img/black_swan1.jpg",
+        poster: "./static/img/album/album_1.jpg",
     },
     {
         id: '4',
         songName: `Like (좋아요)
         <div class="album">2 Cool 4 Skool [1st Single]</div>`,
-        poster: "./static/img/Idol1.jpg",
+        poster: "./static/img/album/album_1.jpg",
     },
     {
         id: '5',
         songName: `Outro: Circle Room Cypher <br>
         <div class="album">2 Cool 4 Skool [1st Single]</div>`,
-        poster: "./static/img/ddaeng1.jpg",
+        poster: "./static/img/album/album_1.jpg",
     },
     {
         id: '6',
