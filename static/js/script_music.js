@@ -181,14 +181,12 @@ const songs = [
     },
     {
         id: '31',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Skool Luv Affair (2014)`,
         poster: "./static/img/album/album_3.jpg",
     },
     {
         id: '32',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Dark & Wild (2014)`,
         poster: "./static/img/album/album_4.jpg",
     },
     {
