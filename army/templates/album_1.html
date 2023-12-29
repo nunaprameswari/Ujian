@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="{% static 'css/style_music.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Army</title>
+    <style>
+        header .song_side::before {
+            background: url('./static/img/album/poto.png');
+        }
+
+        header .menu_side .playlist a {
+            text-decoration: none;
+            color: #4c5262;
+        }
+
+        header .menu_side .playlist a:hover {
+            color: #d47ef7;
+        }
+
+        header .song_side a:hover {
+            color: #d47ef7;
+        }
+    </style>
 </head>
 
 
@@ -17,7 +35,7 @@
             <h6 id="menu_list_active_button"><i class='bx bxs-playlist'></i></h6>
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
-                <h4 class="active"><i class='bx bx-music'></i> Music</h4>
+                <h4><span></span><a href="music"> Music</h4></a>
                 <h4><a href="list"> My favorite</a></h4>
             </div>
             <div class="menu_song">
@@ -67,8 +85,7 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li>Discover <span></span></li>
-                    <li><a href="my_album"> Album Music</a></li>
+                    <li><a href="music">Discover</li></a>
                     <li><a href="admin">Admin</a></li>
                     <li><a href="idol">Idol</a></li>
                     <li><a href="artist">Artist</a></li>
