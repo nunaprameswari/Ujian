@@ -176,8 +176,7 @@ const songs = [
     },
     {
         id: '30',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `O!RUL8,2? (2013)`,
         poster: "./static/img/album/album_2.png",
     },
     {
