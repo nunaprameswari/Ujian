@@ -56,6 +56,10 @@ def album_4(request):
     template = loader.get_template('album_4.html')
     return HttpResponse(template.render())
 
+def album_5(request):
+    template = loader.get_template('album_5.html')
+    return HttpResponse(template.render())
+
 def seokjin(request):
     template = loader.get_template('seokjin.html')
     return HttpResponse(template.render())
