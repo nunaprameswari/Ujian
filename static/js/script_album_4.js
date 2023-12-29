@@ -31,7 +31,6 @@ const songs = [
         <div class="album">Dark & Wild (2014)</div>`,
         poster: "./static/img/album/album_4.jpg",
     },
-    
     {
         id: '6',
         songName: `Hip Hop Lover (힙합성애자)
@@ -50,7 +49,6 @@ const songs = [
         <div class="album">Dark & Wild (2014)</div>`,
         poster: "./static/img/album/album_4.jpg",
     },
-    
     {
         id: '9',
         songName: `Rain
