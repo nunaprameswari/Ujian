@@ -38,122 +38,102 @@ const songs = [
     },
     {
         id: '7',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `O!RUL8,2? (2013)`,
         poster: "./static/img/album/album_2.png",
     },
     {
         id: '8',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Skool Luv Affair (2014)`,
         poster: "./static/img/album/album_3.jpg",
     },
     {
         id: '9',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Dark & Wild (2014)`,
         poster: "./static/img/album/album_4.jpg",
     },
     {
         id: '10',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `WAKE UP`,
         poster: "./static/img/album/album_5.jpg",
     },
     {
         id: '11',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Danger [Japanese]`,
         poster: "./static/img/album/album_6.jpg",
     },
     {
         id: '12',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `In The Mood For Love pt.1 (2015)`,
         poster: "./static/img/album/album_7.jpg",
     },
     {
         id: '13',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `In The Mood For Love pt.2 (2016)`,
         poster: "./static/img/album/album_8.jpg",
     },
     {
         id: '14',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `WINGS (2016)`,
         poster: "./static/img/album/album_9.jpg",
     },
     {
         id: '15',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Wings , You Never Walk Alone (2017)`,
         poster: "./static/img/album/album_10.jpg",
     },
     {
         id: '16',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Love Yourself 承 Her (2017)`,
         poster: "./static/img/album/album_11.jpg",
     },
     {
         id: '17',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Face Yourself  (2018)`,
         poster: "./static/img/album/album_12.jpg",
     },
     {
         id: '18',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Love Yourself 轉 Tear (2018)`,
         poster: "./static/img/album/album_13.jpg",
     },
     {
         id: '19',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Love Yourself 结 Answer (2018)`,
         poster: "./static/img/album/album_14.jpg",
     },
     {
         id: '20',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Map Of The Soul : PERSONA (2020)`,
         poster: "./static/img/album/album_15.jpg",
     },
     {
         id: '21',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Map Of The Soul 7 (2020)`,
         poster: "./static/img/album/album_16.jpg",
     },
     {
         id: '22',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `Dynamite (2020)`,
         poster: "./static/img/album/album_17.jpg",
     },
     {
         id: '23',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `BE (2020)`,
         poster: "./static/img/album/album_18.jpg",
     },
     {
         id: '24',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `BTS, The Best (2021)`,
         poster: "./static/img/album/album_19.jpg",
     },
     {
         id: '25',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `BUTTER (2021)`,
         poster: "./static/img/album/album_20.png",
     },
     {
         id: '26',
-        songName: `Yet To Come (The Most Beatiful Moment)
-        <div class="album">PROOF (2022)</div>`,
+        songName: `PROOF (2022)`,
         poster: "./static/img/album/album_21.png",
     },
 ]
