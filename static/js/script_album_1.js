@@ -3,155 +3,155 @@ const music = new Audio('./static/songs/3.mp3');
 const songs = [
     {
         id: '1',
-        songName: `Anpanman <br>
-        <div class="album">Love Yourself 轉 Tear (2018)</div>`,
+        songName: `Intro: 2 Cool 4 Skool (feat. DJ Friz) <br>
+        <div class="album">2 Cool 4 Skool [1st Single]</div>`,
         poster: "./static/img/anpanman1.jpg",
     },
     {
         id: '2',
-        songName: `뱁새 (Baepsae) <br>
-        <div class="album">In The Mood For Love pt.2 (2016)</div>`,
+        songName: `We Are Bulletproof Pt.2 <br>
+        <div class="album">2 Cool 4 Skool [1st Single]</div>`,
         poster: "./static/img/baepsae1.jpg",
     },
     {
         id: '3',
-        songName: `Black Swan <br>
-        <div class="album">Map Of The Soul 7 (2020)</div>`,
+        songName: `No More Dream <br>
+        <div class="album">2 Cool 4 Skool [1st Single]</div>`,
         poster: "./static/img/black_swan1.jpg",
     },
     {
         id: '4',
-        songName: `Idol
-        <div class="album">Love Yourself 结 Answer (2018)</div>`,
+        songName: `Like (좋아요)
+        <div class="album">2 Cool 4 Skool [1st Single]</div>`,
         poster: "./static/img/Idol1.jpg",
     },
     {
         id: '5',
-        songName: `Ddaeng <br>
-        <div class="album">DD Ceremony</div>`,
+        songName: `Outro: Circle Room Cypher <br>
+        <div class="album">2 Cool 4 Skool [1st Single]</div>`,
         poster: "./static/img/ddaeng1.jpg",
     },
     {
-        id: '29',
+        id: '6',
         songName: `2 Cool 4 Skool [1st Single]`,
         poster: "./static/img/album/album_1.jpg",
     },
     {
-        id: '30',
+        id: '7',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_2.png",
     },
     {
-        id: '31',
+        id: '8',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_3.jpg",
     },
     {
-        id: '32',
+        id: '9',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_4.jpg",
     },
     {
-        id: '33',
+        id: '10',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_5.jpg",
     },
     {
-        id: '34',
+        id: '11',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_6.jpg",
     },
     {
-        id: '35',
+        id: '12',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_7.jpg",
     },
     {
-        id: '36',
+        id: '13',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_8.jpg",
     },
     {
-        id: '37',
+        id: '14',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_9.jpg",
     },
     {
-        id: '38',
+        id: '15',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_10.jpg",
     },
     {
-        id: '39',
+        id: '16',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_11.jpg",
     },
     {
-        id: '40',
+        id: '17',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_12.jpg",
     },
     {
-        id: '41',
+        id: '18',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_13.jpg",
     },
     {
-        id: '42',
+        id: '19',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_14.jpg",
     },
     {
-        id: '43',
+        id: '20',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_15.jpg",
     },
     {
-        id: '44',
+        id: '21',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_16.jpg",
     },
     {
-        id: '45',
+        id: '22',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_17.jpg",
     },
     {
-        id: '46',
+        id: '23',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_18.jpg",
     },
     {
-        id: '47',
+        id: '24',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_19.jpg",
     },
     {
-        id: '48',
+        id: '25',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_20.png",
     },
     {
-        id: '49',
+        id: '26',
         songName: `Yet To Come (The Most Beatiful Moment)
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/album/album_21.png",
@@ -248,11 +248,11 @@ let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e) => {
     e.addEventListener('click', (el) => {
         index = el.target.id;
-        music.src = `./static/songs/${index}.mp3`;
+        music.src = `./static/songs/album_1/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
-        download_music.href = `./static/songs/${index}.mp3`;
+        download_music.href = `./static/songs/album_1/${index}.mp3`;
 
         let songTitles = songs.filter((els) => {
             return els.id == index;
@@ -353,7 +353,7 @@ back.addEventListener('click', () => {
         index = Array.from(document.getElementsByClassName('songItem')).length;
     }
 
-    music.src = `./static/songs/${index}.mp3`;
+    music.src = `./static/songs/album_1/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -382,7 +382,7 @@ next.addEventListener('click', () => {
         index = 1;
     }
 
-    music.src = `./static/songs/${index}.mp3`;
+    music.src = `./static/songs/album_1/${index}.mp3`;
         music.play();
         masterPlay.classList.remove('bx-play');
         masterPlay.classList.add('bx-pause');
@@ -466,11 +466,11 @@ const next_music = () => {
     } else {
         index ++;
     }
-    music.src = `./static/songs/${index}.mp3`;
+    music.src = `./static/songs/album_1/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/${index}.mp3`;
+    download_music.href = `./static/songs/album_1/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -493,11 +493,11 @@ const next_music = () => {
 
 const repeat_music = () => {
     index;
-    music.src = `./static/songs/${index}.mp3`;
+    music.src = `./static/songs/album_1/${index}.mp3`;
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/${index}.mp3`;
+    download_music.href = `./static/songs/album_1/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -528,7 +528,7 @@ const random_music = () => {
     music.play();
     masterPlay.classList.remove('bx-play');
     masterPlay.classList.add('bx-pause');
-    download_music.href = `./static/songs/${index}.mp3`;
+    download_music.href = `./static/songs/album_1/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
