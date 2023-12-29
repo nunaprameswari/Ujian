@@ -9,6 +9,7 @@ urlpatterns = [
     path('album_1', views.album_1, name='album_1'),
     path('album_2', views.album_2, name='album_2'),
     path('album_3', views.album_3, name='album_3'),
+    path('album_4', views.album_4, name='album_4'),
     path('seokjin', views.seokjin, name='seokjin'),
     path('yoongi', views.yoongi, name='yoongi'),
     path('hope', views.hope, name='hope'),
