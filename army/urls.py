@@ -6,6 +6,7 @@ urlpatterns = [
     path('create',views.create, name='create'),
     path('list',views.list, name='list'),
     path('music', views.music, name='music'),
+    path('rekomended', views.rekomended, name='rekomended'),
     path('album_1', views.album_1, name='album_1'),
     path('album_2', views.album_2, name='album_2'),
     path('album_3', views.album_3, name='album_3'),
