@@ -169,46 +169,6 @@ const songs = [
         <div class="album">PROOF (2022)</div>`,
         poster: "./static/img/Yet_To_Come1.png",
     },
-    {
-        songName: `2 Cool 4 Skool [1st Single]`,
-        poster: "./static/img/album/album_1.jpg",
-    },
-    {
-        songName: `O!RUL8,2? (2013)`,
-        poster: "./static/img/album/album_2.png",
-    },
-    {
-        songName: `Skool Luv Affair (2014)`,
-        poster: "./static/img/album/album_3.jpg",
-    },
-    {
-        songName: `Dark & Wild (2014)`,
-        poster: "./static/img/album/album_4.jpg",
-    },
-    {
-        songName: `WAKE UP`,
-        poster: "./static/img/album/album_5.jpg",
-    },
-    {
-        songName: `Danger [Japanese]`,
-        poster: "./static/img/album/album_6.jpg",
-    },
-    {
-        songName: `In The Mood For Love pt.1 (2015)`,
-        poster: "./static/img/album/album_7.jpg",
-    },
-    {
-        songName: `In The Mood For Love pt.2 (2016)`,
-        poster: "./static/img/album/album_8.jpg",
-    },
-    {
-        songName: `WINGS (2016)`,
-        poster: "./static/img/album/album_9.jpg",
-    },
-    {
-        songName: `Wings , You Never Walk Alone (2017)`,
-        poster: "./static/img/album/album_10.jpg",
-    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
