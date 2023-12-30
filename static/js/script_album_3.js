@@ -94,61 +94,6 @@ const songs = [
         songName: `Wings , You Never Walk Alone (2017)`,
         poster: "./static/img/album/album_10.jpg",
     },
-    {
-        id: '18',
-        songName: `Love Yourself 承 Her (2017)`,
-        poster: "./static/img/album/album_11.jpg",
-    },
-    {
-        id: '19',
-        songName: `Face Yourself  (2018)`,
-        poster: "./static/img/album/album_12.jpg",
-    },
-    {
-        id: '20',
-        songName: `Love Yourself 轉 Tear (2018)`,
-        poster: "./static/img/album/album_13.jpg",
-    },
-    {
-        id: '21',
-        songName: `Love Yourself 结 Answer (2018)`,
-        poster: "./static/img/album/album_14.jpg",
-    },
-    {
-        id: '22',
-        songName: `Map Of The Soul : PERSONA (2020)`,
-        poster: "./static/img/album/album_15.jpg",
-    },
-    {
-        id: '23',
-        songName: `Map Of The Soul 7 (2020)`,
-        poster: "./static/img/album/album_16.jpg",
-    },
-    {
-        id: '24',
-        songName: `Dynamite (2020)`,
-        poster: "./static/img/album/album_17.jpg",
-    },
-    {
-        id: '25',
-        songName: `BE (2020)`,
-        poster: "./static/img/album/album_18.jpg",
-    },
-    {
-        id: '26',
-        songName: `BTS, The Best (2021)`,
-        poster: "./static/img/album/album_19.jpg",
-    },
-    {
-        id: '27',
-        songName: `BUTTER (2021)`,
-        poster: "./static/img/album/album_20.png",
-    },
-    {
-        id: '28',
-        songName: `PROOF (2022)`,
-        poster: "./static/img/album/album_21.png",
-    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((e, i) => {
