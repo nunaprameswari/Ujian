@@ -170,109 +170,44 @@ const songs = [
         poster: "./static/img/Yet_To_Come1.png",
     },
     {
-        id: '29',
         songName: `2 Cool 4 Skool [1st Single]`,
         poster: "./static/img/album/album_1.jpg",
     },
     {
-        id: '30',
         songName: `O!RUL8,2? (2013)`,
         poster: "./static/img/album/album_2.png",
     },
     {
-        id: '31',
         songName: `Skool Luv Affair (2014)`,
         poster: "./static/img/album/album_3.jpg",
     },
     {
-        id: '32',
         songName: `Dark & Wild (2014)`,
         poster: "./static/img/album/album_4.jpg",
     },
     {
-        id: '33',
         songName: `WAKE UP`,
         poster: "./static/img/album/album_5.jpg",
     },
     {
-        id: '34',
         songName: `Danger [Japanese]`,
         poster: "./static/img/album/album_6.jpg",
     },
     {
-        id: '35',
         songName: `In The Mood For Love pt.1 (2015)`,
         poster: "./static/img/album/album_7.jpg",
     },
     {
-        id: '36',
         songName: `In The Mood For Love pt.2 (2016)`,
         poster: "./static/img/album/album_8.jpg",
     },
     {
-        id: '37',
         songName: `WINGS (2016)`,
         poster: "./static/img/album/album_9.jpg",
     },
     {
-        id: '38',
         songName: `Wings , You Never Walk Alone (2017)`,
         poster: "./static/img/album/album_10.jpg",
-    },
-    {
-        id: '39',
-        songName: `Love Yourself 承 Her (2017)`,
-        poster: "./static/img/album/album_11.jpg",
-    },
-    {
-        id: '40',
-        songName: `Face Yourself  (2018)`,
-        poster: "./static/img/album/album_12.jpg",
-    },
-    {
-        id: '41',
-        songName: `Love Yourself 轉 Tear (2018)`,
-        poster: "./static/img/album/album_13.jpg",
-    },
-    {
-        id: '42',
-        songName: `Love Yourself 结 Answer (2018)`,
-        poster: "./static/img/album/album_14.jpg",
-    },
-    {
-        id: '43',
-        songName: `Map Of The Soul : PERSONA (2020)`,
-        poster: "./static/img/album/album_15.jpg",
-    },
-    {
-        id: '44',
-        songName: `Map Of The Soul 7 (2020)`,
-        poster: "./static/img/album/album_16.jpg",
-    },
-    {
-        id: '45',
-        songName: `Dynamite (2020)`,
-        poster: "./static/img/album/album_17.jpg",
-    },
-    {
-        id: '46',
-        songName: `BE (2020)`,
-        poster: "./static/img/album/album_18.jpg",
-    },
-    {
-        id: '47',
-        songName: `BTS, The Best (2021)`,
-        poster: "./static/img/album/album_19.jpg",
-    },
-    {
-        id: '48',
-        songName: `BUTTER (2021)`,
-        poster: "./static/img/album/album_20.png",
-    },
-    {
-        id: '49',
-        songName: `PROOF (2022)`,
-        poster: "./static/img/album/album_21.png",
     },
 ]
 
