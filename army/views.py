@@ -64,6 +64,22 @@ def album_6(request):
     template = loader.get_template('album_6.html')
     return HttpResponse(template.render())
 
+def album_7(request):
+    template = loader.get_template('album_7.html')
+    return HttpResponse(template.render())
+
+def album_8(request):
+    template = loader.get_template('album_8.html')
+    return HttpResponse(template.render())
+
+def album_9(request):
+    template = loader.get_template('album_9.html')
+    return HttpResponse(template.render())
+
+def album_10(request):
+    template = loader.get_template('album_10.html')
+    return HttpResponse(template.render())
+
 def seokjin(request):
     template = loader.get_template('seokjin.html')
     return HttpResponse(template.render())
