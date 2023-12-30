@@ -381,5 +381,18 @@
     <script src="{% static 'js/script_rekomended.js' %}"></script>
 </body>
 
-
+<table border="1">
+    <tr>
+        <th>Nama_Panggung</th>
+        <th>Tanggal_Lahir</th>
+        <th>Alamat</th>
+        <th>Pesan_Moral</th>
+    </tr>
+    <tr>
+        <td>{{ members.Nama_Panggung }}</td>
+        <td>{{ members.Tanggal_Lahir }}</td>
+        <td>{{ members.Alamat }}</td>
+        <td>{{ members.Pesan_Moral }}</td>
+    </tr>
+</table>
 </html>
