@@ -1,4 +1,4 @@
-const music = new Audio('./static/songs/3.mp3');
+const music = new Audio('./static/songs/koki/10.mp3');
 
 const songs = [
     {

@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style_music.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Army</title>
+    <link rel="icon" href="{% static 'img/logo.png' %}" type=" image/x-icon">
+    <title>Bangtan</title>
     <style>
+        link{
+            display: none;
+        }
+        
         header .song_side::before {
-            background: url('./static/img/album/photoshot_3.png');
+            background: url('./static/img/tampilans.png');
         }
 
         header .menu_side .playlist a {
@@ -36,7 +41,7 @@
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
                 <h4><span></span><a href="music"> Music</h4></a>
-                <h4><a href="list"> My favorite</a></h4>
+                <h4><span></span><a href="galery"> Galery</a></h4>
             </div>
             <div class="menu_song">
                 <li class="songItem">
@@ -77,7 +82,7 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li><a href="music">Discover</li></a>
+                    <li><a href="rekomended">Rekomended</a></li>
                     <li><a href="admin">Admin</a></li>
                     <li><a href="idol">Idol</a></li>
                     <li><a href="artist">Artist</a></li>
@@ -98,72 +103,72 @@
 
             <div class="popular_song">
                 <div class="h4">
-                    <h4>Popular Song</h4>
+                    <h4>Album</h4>
                     <div class="btn">
                         <i class="bx bxs-chevron-left" id="pop_song_left"></i>
                         <i class="bx bxs-chevron-right" id="pop_song_right"></i>
                     </div>
                 </div>
                 <div class="pop_song">
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_1"><img src="{% static 'img/Blood_Sweat_Tears1.jpg' %}" alt=""></a>
+                            <a href="album_1"><img src="{% static 'img/album/album_1.jpg' %}" alt=""></a>
                         </div>
                         <h5>2 Cool 4 Skool [1st Single]</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_2"><img src="{% static 'img/Boy_With_Luv1.jpg' %}" alt=""></a>
+                            <a href="album_2"><img src="{% static 'img/album/album_2.png' %}" alt=""></a>
                         </div>
-                        <h5>Boy With Luv (Feat. Halsey)</h5>
+                        <h5>O!RUL8,2? (2013)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_3"><img src="{% static 'img/Boy_With_Luv1.jpg' %}" alt=""></a>
+                            <a href="album_3"><img src="{% static 'img/album/album_3.jpg' %}" alt=""></a>
                         </div>
-                        <h5>Butter</h5>
+                        <h5>Skool Luv Affair (2014)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_4"><img src="{% static 'img/DNA1.jpg' %}" alt=""></a>
+                            <a href="album_4"><img src="{% static 'img/album/album_4.jpg' %}" alt=""></a>
                         </div>
-                        <h5>DNA</h5>
+                        <h5>Dark & Wild (2014)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_5"><img src="{% static 'img/DOPE1.jpg' %}" alt=""></a>
+                            <a href="album_5"><img src="{% static 'img/album/album_5.jpg' %}" alt=""></a>
                         </div>
-                        <h5>쩔어 (Dope)</h5>
+                        <h5>WAKE U</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_6"><img src="{% static 'img/Dynamite1.jpeg' %}" alt=""></a>
+                            <a href="album_6"><img src="{% static 'img/album/album_6.jpg' %}" alt=""></a>
                         </div>
-                        <h5>Dynamite</h5>
+                        <h5>Danger [Japanese]</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_7"><img src="{% static 'img/FAKE_LOVE1.jpg' %}" alt=""></a>
+                            <a href="album_7"><img src="{% static 'img/album/album_7.jpg' %}" alt=""></a>
                         </div>
-                        <h5>Fake Love</h5>
+                        <h5>In The Mood For Love pt.1 (2015)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_8"><img src="{% static 'img/Go_Go1.jpg' %}" alt=""></a>
+                            <a href="album_8"><img src="{% static 'img/album/album_8.jpg' %}" alt=""></a>
                         </div>
-                        <h5>고민보다 Go (Go Go)</h5>
+                        <h5>In The Mood For Love pt.2 (2016)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_9"><img src="{% static 'img/danger1.png' %}" alt=""></a>
+                            <a href="album_9"><img src="{% static 'img/album/album_9.jpg' %}" alt=""></a>
                         </div>
-                        <h5>Danger</h5>
+                        <h5>WINGS (2016)</h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songPlay">
                         <div class="img_play">
-                            <a href="album_10"><img src="{% static 'img/mic_drop1.jpg' %}" alt=""></a>
+                            <a href="album_10"><img src="{% static 'img/album/album_10.jpg' %}" alt=""></a>
                         </div>
-                        <h5>MIC Drop</h5>
+                        <h5>Wings , You Never Walk Alone (2017)</h5>
                     </li>
                 </div>
             </div>
@@ -207,10 +212,10 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="{% static 'img/black_swan1.jpg' %}" alt="" id="poster_master_play">
+            <img src="{% static 'img/album/album_8.jpg' %}" alt="" id="poster_master_play">
             <h5 id="title">
-                Black Swan
-                <div class="album">Map Of The Soul 7 (2020)</div>
+                Ma City
+                <div class="album">In The Mood For Love pt.2 (2016)</div>
             </h5>
             <div class="icon">
                 <i class='bx shuffle bx-music'>next</i>

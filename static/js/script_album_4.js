@@ -1,4 +1,4 @@
-const music = new Audio('./static/songs/3.mp3');
+const music = new Audio('./static/songs/album_4/5.mp3');
 
 const songs = [
     {
@@ -60,56 +60,6 @@ const songs = [
         songName: `War of Hormone (호르몬 전쟁) <br>
         <div class="album">Dark & Wild (2014)</div>`,
         poster: "./static/img/album/album_4.jpg",
-    },
-    {
-        id: '11',
-        songName: `2 Cool 4 Skool [1st Single]`,
-        poster: "./static/img/album/album_1.jpg",
-    },
-    {
-        id: '12',
-        songName: `O!RUL8,2? (2013)`,
-        poster: "./static/img/album/album_2.png",
-    },
-    {
-        id: '13',
-        songName: `Skool Luv Affair (2014)`,
-        poster: "./static/img/album/album_3.jpg",
-    },
-    {
-        id: '14',
-        songName: `Dark & Wild (2014)`,
-        poster: "./static/img/album/album_4.jpg",
-    },
-    {
-        id: '15',
-        songName: `WAKE UP`,
-        poster: "./static/img/album/album_5.jpg",
-    },
-    {
-        id: '16',
-        songName: `Danger [Japanese]`,
-        poster: "./static/img/album/album_6.jpg",
-    },
-    {
-        id: '17',
-        songName: `In The Mood For Love pt.1 (2015)`,
-        poster: "./static/img/album/album_7.jpg",
-    },
-    {
-        id: '18',
-        songName: `In The Mood For Love pt.2 (2016)`,
-        poster: "./static/img/album/album_8.jpg",
-    },
-    {
-        id: '19',
-        songName: `WINGS (2016)`,
-        poster: "./static/img/album/album_9.jpg",
-    },
-    {
-        id: '20',
-        songName: `Wings , You Never Walk Alone (2017)`,
-        poster: "./static/img/album/album_10.jpg",
     },
 ]
 

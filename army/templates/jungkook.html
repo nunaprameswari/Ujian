@@ -7,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style_music.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Army</title>
+    <link rel="icon" href="{% static 'img/logo.png' %}" type=" image/x-icon">
+    <title>Bangtan</title>
     <style>
+        link{
+            display: none;
+        }
+
         header .song_side::before {
             background: url('./static/img/jungkook.png');
         }
@@ -36,7 +41,7 @@
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
                 <h4><span></span><a href="music"> Music</h4></a>
-                <h4><span></span> My favorite</h4>
+                <h4><span></span><a href="galery"> Galery</a></h4>
             </div>
             <div class="menu_song">
                 <li class="songItem">
@@ -45,7 +50,6 @@
                     <h5>Anpanman <br>
                         <div class="album">Love Yourself 轉 Tear (2018)</div>
                     </h5>
-                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="1"></i>
                 </li>
                 <li class="songItem">
@@ -54,7 +58,6 @@
                     <h5>뱁새 (Baepsae) <br>
                         <div class="album">In The Mood For Love pt.2 (2016)</div>
                     </h5>
-                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="2"></i>
                 </li>
                 <li class="songItem">
@@ -63,7 +66,6 @@
                     <h5>Black Swan <br>
                         <div class="album">Map Of The Soul 7 (2020)</div>
                     </h5>
-                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="3"></i>
                 </li>
                 <li class="songItem">
@@ -72,7 +74,6 @@
                     <h5>Idol
                         <div class="album">Love Yourself 结 Answer (2018)</div>
                     </h5>
-                    <i class='bx favorite bx-heart-circle' id="heart"></i>
                     <i class='bx playListPlay bx-play-circle' id="4"></i>
                 </li>
             </div>
@@ -81,8 +82,7 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li><a href="music">Discover</li></a>
-                    <li>Album Music</li>
+                    <li><a href="rekomended">Rekomended</a></li>
                     <li><a href="admin">Admin</a></li>
                     <li><a href="idol">Idol</a></li>
                     <li><a href="artist">Artist</a></li>
@@ -90,6 +90,7 @@
                 <div class="search">
                     <i class='bx bx-search-alt'></i>
                     <input type="text" placeholder="Search Music...">
+                    <div class="search_result"></div>
                 </div>
                 <div class="user">
                     <img src="{% static 'img/nuna.jpg' %}" alt="">
@@ -113,9 +114,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/ddaeng1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="5"></i>
-                                <div class="cinta">
-                                    <i class='bx favorite bx-heart-circle' id="heart"></i>
-                                </div>
                         </div>
                         <h5>Ddaeng <br>
                             <div class="album">DD Ceremony</div>
@@ -125,9 +123,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/Blood_Sweat_Tears1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="6"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>2 Blood Sweat and Tears
                             <div class="album">WINGS (2016)</div>
@@ -137,9 +132,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/Boy_With_Luv1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="7"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>Boy With Luv (Feat. Halsey)
                             <div class="album">Map Of The Soul : PERSONA (2020)</div>
@@ -149,9 +141,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/Butter1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="8"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>Butter
                             <div class="album">BUTTER (2021)</div>
@@ -161,9 +150,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/DNA1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="9"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>DNA
                             <div class="album">Love Yourself 承 Her (2017)</div>
@@ -173,9 +159,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/DOPE1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="10"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>쩔어 (Dope)
                             <div class="album">In The Mood For Love pt.1 (2015)</div>
@@ -185,9 +168,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/Dynamite1.jpeg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="11"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>Dynamite
                             <div class="album">Dynamite (2020)</div>
@@ -197,9 +177,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/FAKE_LOVE1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="12"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>Fake Love
                             <div class="album">Love Yourself 轉 Tear (2018)</div>
@@ -209,9 +186,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/Go_Go1.jpg' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="13"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>고민보다 Go (Go Go)
                             <div class="album">Love Yourself 承 Her (2017)</div>
@@ -221,9 +195,6 @@
                         <div class="img_play">
                             <img src="{% static 'img/danger1.png' %}" alt="">
                             <i class='bx playListPlay bx-play-circle' id="14"></i>
-                            <div class="cinta">
-                                <i class='bx favorite bx-heart-circle' id="heart"></i>
-                            </div>
                         </div>
                         <h5>Danger <br>
                             <div class="album">Dark & Wild (2014)</div>
@@ -271,10 +242,10 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="{% static 'img/black_swan1.jpg' %}" alt="" id="poster_master_play">
+            <img src="{% static 'img/koki/3d.png' %}" alt="" id="poster_master_play">
             <h5 id="title">
-                Black Swan
-                <div class="album">Map Of The Soul 7 (2020)</div>
+                3D <br>
+                <div class="album">3D : The Remixes (2023)</div>
             </h5>
             <div class="icon">
                 <i class='bx shuffle bx-music'>next</i>

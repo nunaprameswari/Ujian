@@ -7,10 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style_music.css' %}">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Army</title>
+    <link rel="icon" href="{% static 'img/logo.png' %}" type=" image/x-icon">
+    <title>Bangtan</title>
     <style>
+        link{
+            display: none;
+        }
+        
         header .song_side::before {
-            background: url('./static/img/album/photoshot_3.png');
+            background: url('./static/img/tampilans.png');
         }
 
         header .menu_side .playlist a {
@@ -36,7 +41,7 @@
             <h1><img src="{% static 'img/logo.png' %}" alt=""> BTS</h1>
             <div class="playlist">
                 <h4><span></span><a href="music"> Music</h4></a>
-                <h4><a href="list"> My favorite</a></h4>
+                <h4><span></span><a href="galery"> Galery</a></h4>
             </div>
             <div class="menu_song">
                 <li class="songItem">
@@ -133,7 +138,7 @@
         <div class="song_side">
             <nav>
                 <ul>
-                    <li><a href="music">Discover</li></a>
+                    <li><a href="rekomended">Rekomended</a></li>
                     <li><a href="admin">Admin</a></li>
                     <li><a href="idol">Idol</a></li>
                     <li><a href="artist">Artist</a></li>
@@ -154,7 +159,7 @@
 
             <div class="popular_song">
                 <div class="h4">
-                    <h4>Popular Song</h4>
+                    <h4>Album</h4>
                     <div class="btn">
                         <i class="bx bxs-chevron-left" id="pop_song_left"></i>
                         <i class="bx bxs-chevron-right" id="pop_song_right"></i>
@@ -263,10 +268,10 @@
                 <div class="wave1"></div>
                 <div class="wave1"></div>
             </div>
-            <img src="{% static 'img/black_swan1.jpg' %}" alt="" id="poster_master_play">
+            <img src="{% static 'img/album/album_10.jpg' %}" alt="" id="poster_master_play">
             <h5 id="title">
-                Black Swan
-                <div class="album">Map Of The Soul 7 (2020)</div>
+                봄날 (Spring Day)
+                <div class="album">Wings , You Never Walk Alone (2017)</div>
             </h5>
             <div class="icon">
                 <i class='bx shuffle bx-music'>next</i>
