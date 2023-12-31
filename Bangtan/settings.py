@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Bangtan.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mencoba',
+        'NAME': 'bangtan',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
