@@ -1,13 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Artist, Idol
+from .models import Artist, Idol, Video
 
 # Create your views here.
 
 def list(request):
-    template = loader.get_template('list.html')
-    return HttpResponse(template.render())
+    Video = Video.objects.all()
+    return render(request,"list.html", {"video":video})
 
 def music(request):
     template = loader.get_template('music.html')
