@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Artist, Idol, Instagram
+from .models import Artist, Idol
 
 # Register your models here.
 
@@ -8,4 +8,3 @@ class ArtistAdmin(admin.ModelAdmin):
 
 admin.site.register(Artist, ArtistAdmin)
 admin.site.register(Idol)
-admin.site.register(Instagram)

@@ -1,40 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Artist, Idol, Instagram
-from .forms import InstagramForm
+from .models import Artist, Idol
 
 # Create your views here.
 
-def delete(request, delete_id):
-    Instagram.objects.filter(id=delete_id).delete()
-    return redirect('list')
-
-def create(request):
-    akun_form = InstagramForm(request.POST or None)
-
-    if request.method == 'POST':
-        if akun_form.is_valid():
-            akun_form.save()
-
-        return redirect('list')
-
-    context = {
-        "page_title":"Tambah akun",
-        "akun_form":akun_form,
-    }
-
-    return render(request, 'create.html', context)
-
 def list(request):
-    semua_akun = Instagram.objects.all()
-
-    context = {
-        'page_title':'Sosial_Media',
-        'semua_akun':semua_akun,
-    }
-
-    return render(request, 'list.html', context)
+    template = loader.get_template('list.html')
+    return HttpResponse(template.render())
 
 def music(request):
     template = loader.get_template('music.html')
