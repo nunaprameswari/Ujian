@@ -6,7 +6,7 @@ from .models import Artist, Idol, Video
 # Create your views here.
 
 def list(request):
-    Video = Video.objects.all()
+    video = Video.objects.all()
     return render(request,"list.html", {"video":video})
 
 def music(request):

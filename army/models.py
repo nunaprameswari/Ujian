@@ -1,12 +1,9 @@
 from django.db import models
 
 # Create your models here.
-class Video(models.Model):
-    caption = models.CharField(max_length=100)
-    video = models.FileField(upload_to="video/%y")
-
-    def __str__(self):
-        return self.caption
+class Image(models.Model):
+    photo = models.ImageField(upload_to="myimage")
+    date = models.DataTimeField(auto_now_add=True)
 
 class Idol(models.Model):
     Nama_Idol = models.CharField(max_length=100)
