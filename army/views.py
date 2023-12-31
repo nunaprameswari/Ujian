@@ -1,13 +1,19 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Artist, Idol, Video
+from .forms import ImageForm
+from .models import Artist, Idol, Image
 
 # Create your views here.
 
 def list(request):
-    video = Video.objects.all()
-    return render(request,"list.html", {"video":video})
+    if request.method == "POST":
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+    form = ImageForm()
+    img = Image.objects.all()
+    return render(request, 'list.html', {'img':img, 'form':form})
 
 def music(request):
     template = loader.get_template('music.html')

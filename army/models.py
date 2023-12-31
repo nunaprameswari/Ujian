@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class Image(models.Model):
     photo = models.ImageField(upload_to="myimage")
-    date = models.DataTimeField(auto_now_add=True)
+    date = models.DateTimeField(auto_now_add=True)
 
 class Idol(models.Model):
     Nama_Idol = models.CharField(max_length=100)
