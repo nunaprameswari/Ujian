@@ -23,3 +23,16 @@ body {
 .main-container {
     padding: 20px;
 }
+
+.skill-bar {
+    background-color: #bd58ec;
+    border-radius: 16px;
+}
+
+.progress-bar {
+    padding: 0.1em;
+    border-radius: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #611c81;
+}
