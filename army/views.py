@@ -19,6 +19,10 @@ def music(request):
     template = loader.get_template('music.html')
     return HttpResponse(template.render())
 
+def user(request):
+    template = loader.get_template('user.html')
+    return HttpResponse(template.render())
+
 def rekomended(request):
     template = loader.get_template('rekomended.html')
     return HttpResponse(template.render())
