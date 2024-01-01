@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    color: #3c3939;
+    background: linear-gradient(to right, #000000, #611c81);
+}
+
+.profile-card {
+    width: 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
