@@ -14,3 +14,12 @@ body {
 .image-container {
     position: relative;
 }
+
+.info {
+    color: #611c81;
+    margin-right: 16px;
+}
+
+.main-container {
+    padding: 20px;
+}
