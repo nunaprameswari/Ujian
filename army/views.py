@@ -32,6 +32,10 @@ def create(request):
 
     return render(request, 'create.html', context)
 
+def delete(request,delete_id):
+    ArmyMember.objects.filter(id=delete_id).delete()
+    return redirect('army')
+
 def music(request):
     template = loader.get_template('music.html')
     return HttpResponse(template.render())

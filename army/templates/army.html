@@ -18,6 +18,7 @@
                 <th scope="col">Instagram</th>
                 <th scope="col">Twitter</th>
                 <th scope="col">Negara</th>
+                <th scope="col">Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -30,6 +31,7 @@
                     <td>{{akun.instagram}}</td>
                     <td>{{akun.twitter}}</td>
                     <td>{{akun.negara}}</td>
+                    <td><a class="btn btn-danger" href="{% url 'delete' akun.id %}" title="">Delete</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

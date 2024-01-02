@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('army',views.army, name='army'),
     path('create',views.create, name='create'),
+    path('delete/(?P<delete_id>[0-9]+)', views.delete, name='delete'),
     path('user',views.user, name='user'),
     path('music', views.music, name='music'),
     path('rekomended', views.rekomended, name='rekomended'),
