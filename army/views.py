@@ -10,11 +10,27 @@ def army(request):
     member = ArmyMember.objects.all()
 
     context = {
-        'page_title':'Daftar Army Member',
+        'page_title':'List of Army Members',
         'member':member,
     }
 
     return render(request,'army.html', context)
+
+def create(request):
+    akun_member = ArmyMemberForm(request.POST or None)
+
+    if request.method == 'POST':
+        if akun_member.is_valid():
+            akun_member.save()
+
+        return redirect('army')
+
+    context = {
+        "page_title":"Added Member",
+        "akun_member":akun_member
+    }
+
+    return render(request, 'create.html', context)
 
 def music(request):
     template = loader.get_template('music.html')
