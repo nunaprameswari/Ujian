@@ -19,6 +19,12 @@ body a {
     color: #fff;
 }
 
+body a .bx {
+    color: #fff;
+    font-size: 30px;
+    margin: 0px 0px 0px 1000px;
+}
+
 main .table {
     width: 83vw;
     height: 90vh;
