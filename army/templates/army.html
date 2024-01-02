@@ -43,14 +43,14 @@
                         <td>{{akun.instagram}}</td>
                         <td>{{akun.twitter}}</td>
                         <td>{{akun.negara}}</td>
-                        <td><a class="btn btn-danger" href="{% url 'delete' akun.id %}" title="">Delete</a></td>
-                        <td><a class="btn btn-warning" href="{% url 'update' akun.id %}" title="">Update</a></td>
+                        <td><a class="btn" href="{% url 'delete' akun.id %}" title="">Delete</a></td>
+                        <td><a class="bton" href="{% url 'update' akun.id %}" title="">Update</a></td>
                     </tr>
                     {% endfor %}
                 </tbody>
             </table>
         </section>
-        <a class="btn btn-primary" href="create">Plus</a>
+        <a class="button" href="create">Plus</a>
     </main>
 </body>
 </html>
