@@ -8,7 +8,7 @@ class ArmyMember(models.Model):
     twitter = models.CharField(max_length=100)
 
     def __str__(self):
-        return "{}.{}".format{self.id,self.instagram,self.twitter}
+        return f"{self.id,self.instagram,self.twitter}"
 
 class Idol(models.Model):
     Nama_Idol = models.CharField(max_length=100)

@@ -1,19 +1,10 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .forms import ImageForm
-from .models import Artist, Idol, Image
+from .models import Artist, Idol 
 
 # Create your views here.
 
-def galery(request):
-    if request.method == "POST":
-        form = ImageForm(request.POST, request.FILES)
-        if form.is_valid():
-            form.save()
-    form = ImageForm()
-    img = Image.objects.all()
-    return render(request, 'galery.html', {'img':img, 'form':form})
 
 def index(request):
     template = loader.get_template('index.html')
