@@ -1,9 +1,14 @@
 from django.db import models
 
 # Create your models here.
-class Image(models.Model):
-    photo = models.ImageField(upload_to="myimage")
-    date = models.DateTimeField(auto_now_add=True)
+class ArmyMember(models.Model):
+    first_name = models.CharField(max_length=100)
+    last_name = models.CharField(max_length=100)
+    instagram = models.CharField(max_length=100)
+    twitter = models.CharField(max_length=100)
+
+    def __str__(self):
+        return "{}.{}".format{self.id,self.instagram,self.twitter}
 
 class Idol(models.Model):
     Nama_Idol = models.CharField(max_length=100)

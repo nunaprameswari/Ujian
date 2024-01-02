@@ -45,6 +45,7 @@
                     <img src="{{x.photo.url}}" alt="" class="card-img-top" height="200px">
                     <div class="card-footer">
                         <small class="text-muted">{{x.date}}</small>
+                        <a href="{% url 'delete' akun.id %}" class="btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>

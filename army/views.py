@@ -15,6 +15,10 @@ def galery(request):
     img = Image.objects.all()
     return render(request, 'galery.html', {'img':img, 'form':form})
 
+def index(request):
+    template = loader.get_template('index.html')
+    return HttpResponse(template.render())
+
 def music(request):
     template = loader.get_template('music.html')
     return HttpResponse(template.render())
