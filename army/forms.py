@@ -9,4 +9,5 @@ class ArmyMemberForm(forms.ModelForm):
             'last_name',
             'instagram',
             'twitter',
+            'negara',
         ]

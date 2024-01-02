@@ -1,14 +1,20 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from .models import Artist, Idol 
+from .models import Artist, Idol, ArmyMember
+from .forms import ArmyMemberForm
 
 # Create your views here.
 
+def army(request):
+    member = ArmyMember.objects.all()
 
-def index(request):
-    template = loader.get_template('index.html')
-    return HttpResponse(template.render())
+    context = {
+        'page_title':'Daftar Army Member',
+        'member':member,
+    }
+
+    return render(request,'army.html', context)
 
 def music(request):
     template = loader.get_template('music.html')
