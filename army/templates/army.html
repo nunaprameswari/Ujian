@@ -19,6 +19,7 @@
                 <th scope="col">Twitter</th>
                 <th scope="col">Negara</th>
                 <th scope="col">Delete</th>
+                <th scope="col">Update</th>
             </tr>
             </thead>
             <tbody>
@@ -32,6 +33,7 @@
                     <td>{{akun.twitter}}</td>
                     <td>{{akun.negara}}</td>
                     <td><a class="btn btn-danger" href="{% url 'delete' akun.id %}" title="">Delete</a></td>
+                    <td><a class="btn btn-warning" href="{% url 'update' akun.id %}" title="">Update</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

@@ -36,6 +36,31 @@ def delete(request,delete_id):
     ArmyMember.objects.filter(id=delete_id).delete()
     return redirect('army')
 
+def update(request,update_id):
+    member_update = ArmyMember.objects.get(id=update_id)
+    
+    data = {
+        'first_name': member_update.first_name,
+        'last_name': member_update.last_name,
+        'instagram': member_update.instagram,
+        'twitter': member_update.twitter,
+        'negara': member_update.negara,
+    }
+    akun_member = ArmyMemberForm(request.POST or None, initial=data, instance=member_update)
+
+    if request.method == 'POST':
+        if akun_member.is_valid():
+            akun_member.save()
+
+        return redirect('army')
+
+    context = {
+        "page_title":"Update Member",
+        "akun_member":akun_member
+    }
+
+    return render(request, 'create.html', context)
+
 def music(request):
     template = loader.get_template('music.html')
     return HttpResponse(template.render())
